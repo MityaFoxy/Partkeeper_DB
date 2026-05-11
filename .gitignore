@@ -1,0 +1,13 @@
+# Local working SQLite databases
+*.sqlite
+*.sqlite3
+*.db
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite-journal
+*.db-wal
+*.db-shm
+*.db-journal
+backups/
+
+# Git should store schema.sql, data.sql and db_manifest.json, not the live DB.

@@ -1,0 +1,12 @@
+{
+  "format": "partkeeper-db-dump",
+  "schema_version": "17",
+  "exported_at": "2026-05-11T21:06:31",
+  "source_database": "C:\\Users\\bondi\\Partkeeper_DB\\components.sqlite3",
+  "components": 45,
+  "lots": 51,
+  "files": [
+    "schema.sql",
+    "data.sql"
+  ]
+}
