@@ -13,10 +13,6 @@ CREATE TABLE categories (
 
 CREATE TABLE components (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
-<<<<<<< HEAD
-                uuid TEXT NOT NULL UNIQUE,
-=======
->>>>>>> 29ea7bb (add components by PK17.4)
                 mpn TEXT NOT NULL,
                 manufacturer TEXT DEFAULT '',
                 description TEXT DEFAULT '',
@@ -25,14 +21,8 @@ CREATE TABLE components (
                 package TEXT DEFAULT '',
                 source_url TEXT DEFAULT '',
                 notes TEXT DEFAULT '',
-<<<<<<< HEAD
-                fingerprint TEXT NOT NULL DEFAULT '',
-                created_at TEXT NOT NULL,
-                updated_at TEXT NOT NULL,
-=======
                 created_at TEXT NOT NULL,
                 updated_at TEXT NOT NULL, uuid TEXT, fingerprint TEXT NOT NULL DEFAULT '',
->>>>>>> 29ea7bb (add components by PK17.4)
                 UNIQUE(manufacturer, mpn)
             );
 
