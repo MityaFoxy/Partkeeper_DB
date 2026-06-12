@@ -1,0 +1,213 @@
+2026-05-30 01:41:04,723 [INFO] partkeeper.logging_config: Logging enabled: C:\Users\bondi\Partkeeper_DB\logs\partkeeper.log max_bytes=1000000 backup_count=5
+2026-05-30 01:43:15,329 [INFO] partkeeper.db: Component card updated live: id=222 mpn=RMCF0201FT2K20
+2026-05-30 01:43:15,333 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-05-30 01:43:15,348 [INFO] partkeeper.db: Database snapshot restored: components=278 lots=295
+2026-05-30 01:43:17,266 [INFO] partkeeper.undo: Undo: Сохранение изменений карточки
+2026-05-30 01:43:17,282 [INFO] partkeeper.db: Database snapshot restored: components=278 lots=295
+2026-05-30 01:44:37,329 [INFO] partkeeper.exporter: Exporting inventory to Excel: C:/Users/bondi/PartKeeper/partkeeper_export.xlsx
+2026-05-30 01:44:37,591 [INFO] partkeeper.exporter: Excel export finished: C:/Users/bondi/PartKeeper/partkeeper_export.xlsx
+2026-05-30 01:55:05,634 [INFO] __main__: Application closing
+2026-06-05 00:28:10,707 [INFO] partkeeper.logging_config: Logging enabled: C:\Users\bondi\Partkeeper_DB\logs\partkeeper.log max_bytes=1000000 backup_count=5
+2026-06-05 00:28:12,498 [INFO] partkeeper.app: PartKeeper window initialized
+2026-06-05 00:39:31,271 [INFO] partkeeper.db: Component card updated live: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:39:31,273 [INFO] partkeeper.undo: Redo: Автосохранение карточки
+2026-06-05 00:39:31,280 [INFO] partkeeper.db: Database snapshot restored: components=278 lots=295
+2026-06-05 00:44:03,625 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:03,628 [INFO] partkeeper.undo: Redo: Внесение карточки компонента
+2026-06-05 00:44:03,637 [INFO] partkeeper.db: Database snapshot restored: components=278 lots=295
+2026-06-05 00:44:06,121 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:06,125 [INFO] partkeeper.undo: Redo: Внесение карточки компонента
+2026-06-05 00:44:06,134 [INFO] partkeeper.db: Database snapshot restored: components=278 lots=295
+2026-06-05 00:44:06,795 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:07,308 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:07,310 [INFO] partkeeper.undo: Redo: Внесение карточки компонента
+2026-06-05 00:44:07,316 [INFO] partkeeper.db: Database snapshot restored: components=278 lots=295
+2026-06-05 00:44:12,505 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:12,507 [INFO] partkeeper.undo: Redo: Внесение карточки компонента
+2026-06-05 00:44:12,514 [INFO] partkeeper.db: Database snapshot restored: components=278 lots=295
+2026-06-05 00:44:13,011 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:13,013 [INFO] partkeeper.undo: Redo: Внесение карточки компонента
+2026-06-05 00:44:13,019 [INFO] partkeeper.db: Database snapshot restored: components=278 lots=295
+2026-06-05 00:44:13,282 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:13,497 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:13,672 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:13,858 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:14,035 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:14,038 [INFO] partkeeper.undo: Redo: Внесение карточки компонента
+2026-06-05 00:44:14,046 [INFO] partkeeper.db: Database snapshot restored: components=278 lots=295
+2026-06-05 00:44:14,223 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:14,425 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:14,627 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:14,805 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:15,001 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:15,204 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:15,206 [INFO] partkeeper.undo: Redo: Внесение карточки компонента
+2026-06-05 00:44:15,213 [INFO] partkeeper.db: Database snapshot restored: components=278 lots=295
+2026-06-05 00:44:15,400 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:15,567 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:15,746 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:15,922 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:16,106 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:16,108 [INFO] partkeeper.undo: Redo: Внесение карточки компонента
+2026-06-05 00:44:16,115 [INFO] partkeeper.db: Database snapshot restored: components=278 lots=295
+2026-06-05 00:44:16,289 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:16,501 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:16,693 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:16,866 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:17,041 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:17,043 [INFO] partkeeper.undo: Redo: Внесение карточки компонента
+2026-06-05 00:44:17,050 [INFO] partkeeper.db: Database snapshot restored: components=278 lots=295
+2026-06-05 00:44:17,232 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:17,438 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:24,325 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:24,327 [INFO] partkeeper.undo: Redo: Внесение карточки компонента
+2026-06-05 00:44:24,333 [INFO] partkeeper.db: Database snapshot restored: components=278 lots=295
+2026-06-05 00:44:24,524 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:25,112 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:25,116 [INFO] partkeeper.undo: Redo: Внесение карточки компонента
+2026-06-05 00:44:25,124 [INFO] partkeeper.db: Database snapshot restored: components=278 lots=295
+2026-06-05 00:44:25,300 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:25,479 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:25,649 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:25,837 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:26,025 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:26,028 [INFO] partkeeper.undo: Redo: Внесение карточки компонента
+2026-06-05 00:44:26,035 [INFO] partkeeper.db: Database snapshot restored: components=278 lots=295
+2026-06-05 00:44:29,755 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:29,756 [INFO] partkeeper.undo: Redo: Внесение карточки компонента
+2026-06-05 00:44:29,764 [INFO] partkeeper.db: Database snapshot restored: components=278 lots=295
+2026-06-05 00:44:29,952 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:30,175 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:30,177 [INFO] partkeeper.undo: Redo: Внесение карточки компонента
+2026-06-05 00:44:30,183 [INFO] partkeeper.db: Database snapshot restored: components=278 lots=295
+2026-06-05 00:44:30,379 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:56,771 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:56,774 [INFO] partkeeper.undo: Redo: Внесение карточки компонента
+2026-06-05 00:44:56,783 [INFO] partkeeper.db: Database snapshot restored: components=278 lots=295
+2026-06-05 00:44:57,000 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:57,181 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:57,184 [INFO] partkeeper.undo: Redo: Внесение карточки компонента
+2026-06-05 00:44:57,190 [INFO] partkeeper.db: Database snapshot restored: components=278 lots=295
+2026-06-05 00:44:57,382 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:57,581 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:57,777 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:57,980 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:58,183 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:58,185 [INFO] partkeeper.undo: Redo: Внесение карточки компонента
+2026-06-05 00:44:58,190 [INFO] partkeeper.db: Database snapshot restored: components=278 lots=295
+2026-06-05 00:44:58,400 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:58,644 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:58,862 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:59,073 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:59,076 [INFO] partkeeper.undo: Redo: Внесение карточки компонента
+2026-06-05 00:44:59,082 [INFO] partkeeper.db: Database snapshot restored: components=278 lots=295
+2026-06-05 00:44:59,284 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:59,491 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:59,705 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:44:59,918 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:45:00,120 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:45:00,123 [INFO] partkeeper.undo: Redo: Внесение карточки компонента
+2026-06-05 00:45:00,130 [INFO] partkeeper.db: Database snapshot restored: components=278 lots=295
+2026-06-05 00:45:00,603 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:45:01,051 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:45:01,110 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:45:01,112 [INFO] partkeeper.undo: Redo: Внесение карточки компонента
+2026-06-05 00:45:01,157 [INFO] partkeeper.db: Database snapshot restored: components=278 lots=295
+2026-06-05 00:45:01,280 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:45:05,462 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:45:05,465 [INFO] partkeeper.undo: Redo: Внесение карточки компонента
+2026-06-05 00:45:05,474 [INFO] partkeeper.db: Database snapshot restored: components=278 lots=295
+2026-06-05 00:45:06,101 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:45:06,123 [INFO] partkeeper.undo: Redo: Внесение карточки компонента
+2026-06-05 00:45:06,129 [INFO] partkeeper.db: Database snapshot restored: components=278 lots=295
+2026-06-05 00:45:08,762 [INFO] partkeeper.db: Component updated: id=247 mpn=RC0603FR-0716K9L
+2026-06-05 00:45:08,764 [INFO] partkeeper.undo: Redo: Внесение карточки компонента
+2026-06-05 00:45:08,770 [INFO] partkeeper.db: Database snapshot restored: components=278 lots=295
+2026-06-05 00:45:57,352 [INFO] partkeeper.app: Application closing
+2026-06-05 00:48:51,481 [INFO] partkeeper.logging_config: Logging enabled: C:\Users\bondi\Partkeeper_DB\logs\partkeeper.log max_bytes=1000000 backup_count=5
+2026-06-05 00:48:51,664 [INFO] partkeeper.app: PartKeeper window initialized
+2026-06-05 00:54:21,874 [INFO] partkeeper.db: Component card updated live: id=59 mpn=GRM033
+2026-06-05 00:54:21,876 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-05 00:54:21,882 [INFO] partkeeper.db: Database snapshot restored: components=278 lots=295
+2026-06-05 00:59:14,023 [INFO] partkeeper.db: Component card updated live: id=59 mpn=GRM033
+2026-06-05 00:59:14,025 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-05 00:59:14,031 [INFO] partkeeper.db: Database snapshot restored: components=278 lots=295
+2026-06-05 01:48:23,872 [INFO] partkeeper.app: Application closing
+2026-06-05 01:50:35,767 [INFO] partkeeper.logging_config: Logging enabled: C:\Users\bondi\Partkeeper_DB\logs\partkeeper.log max_bytes=1000000 backup_count=5
+2026-06-05 02:06:46,025 [INFO] partkeeper.app: Application closing
+2026-06-05 02:06:51,252 [INFO] partkeeper.logging_config: Logging enabled: C:\Users\bondi\Partkeeper_DB\logs\partkeeper.log max_bytes=1000000 backup_count=5
+2026-06-05 02:06:51,446 [INFO] partkeeper.app: PartKeeper window initialized
+2026-06-05 02:09:32,084 [INFO] partkeeper.exporter: Exporting inventory to Excel: C:/Users/bondi/PartKeeper/partkeeper_export.xlsx
+2026-06-05 02:09:32,354 [INFO] partkeeper.exporter: Excel export finished: C:/Users/bondi/PartKeeper/partkeeper_export.xlsx
+2026-06-05 02:11:32,242 [INFO] partkeeper.app: Application closing
+2026-06-05 08:49:53,635 [INFO] partkeeper.logging_config: Logging enabled: C:\Users\bondi\Partkeeper_DB\logs\partkeeper.log max_bytes=1000000 backup_count=5
+2026-06-05 08:49:53,881 [INFO] partkeeper.app: PartKeeper window initialized
+2026-06-05 14:38:49,036 [INFO] partkeeper.parser: Parsing supplier URL: https://www.lcsc.com/search?q=LD0832AA-0099F
+2026-06-05 14:38:49,460 [INFO] partkeeper.parser: URL parsed: mpn=APPLICATION category=Integrated Circuits manufacturer=S search=True tech_pairs=False
+2026-06-05 14:38:49,461 [INFO] partkeeper.parser: Parsing supplier URL: https://www.chipdip.ru/search?searchtext=LD0832AA-0099F
+2026-06-05 14:38:49,743 [INFO] partkeeper.parser: URL parsed: mpn=LD0832AA-0099F category=Uncategorized manufacturer=Leader search=True tech_pairs=False
+2026-06-05 14:40:09,461 [INFO] partkeeper.db: Component inserted: id=280 mpn=LD0832AA-0099F
+2026-06-05 14:40:09,465 [INFO] partkeeper.undo: Redo: Внесение карточки компонента
+2026-06-05 14:40:09,474 [INFO] partkeeper.db: Database snapshot restored: components=279 lots=295
+2026-06-05 14:40:24,252 [WARNING] partkeeper.db: Component deleted: id=280
+2026-06-05 14:40:24,255 [INFO] partkeeper.undo: Redo: Удаление компонента
+2026-06-05 14:40:24,261 [INFO] partkeeper.db: Database snapshot restored: components=278 lots=295
+2026-06-05 14:40:38,961 [INFO] partkeeper.parser: Parsing supplier URL: https://www.lcsc.com/search?q=LD0832AA-0099F
+2026-06-05 14:40:39,296 [INFO] partkeeper.parser: URL parsed: mpn=APPLICATION category=Integrated Circuits manufacturer=S search=True tech_pairs=False
+2026-06-05 14:40:39,297 [INFO] partkeeper.parser: Parsing supplier URL: https://www.chipdip.ru/search?searchtext=LD0832AA-0099F
+2026-06-05 14:40:39,586 [INFO] partkeeper.parser: URL parsed: mpn=LD0832AA-0099F category=Uncategorized manufacturer=Leader search=True tech_pairs=False
+2026-06-05 14:43:18,598 [INFO] partkeeper.db: Component card updated live: id=106 mpn=LD0832AA-0099F
+2026-06-05 14:43:18,600 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-05 14:43:18,605 [INFO] partkeeper.db: Database snapshot restored: components=278 lots=295
+2026-06-05 14:44:10,741 [INFO] partkeeper.parser: Parsing supplier URL: https://www.lcsc.com/search?q=LD0832AA-0099F
+2026-06-05 14:44:11,115 [INFO] partkeeper.parser: URL parsed: mpn=APPLICATION category=Integrated Circuits manufacturer=S search=True tech_pairs=False
+2026-06-05 14:44:11,116 [INFO] partkeeper.parser: Parsing supplier URL: https://www.chipdip.ru/search?searchtext=LD0832AA-0099F
+2026-06-05 14:44:11,416 [INFO] partkeeper.parser: URL parsed: mpn=LD0832AA-0099F category=Uncategorized manufacturer=Leader search=True tech_pairs=False
+2026-06-05 16:28:01,202 [INFO] partkeeper.app: Application closing
+2026-06-05 16:49:16,875 [INFO] partkeeper.logging_config: Logging enabled: C:\Users\bondi\Partkeeper_DB\logs\partkeeper.log max_bytes=1000000 backup_count=5
+2026-06-05 16:49:17,188 [INFO] partkeeper.app: PartKeeper window initialized
+2026-06-05 17:00:40,602 [INFO] partkeeper.app: Application closing
+2026-06-05 17:00:47,509 [INFO] partkeeper.logging_config: Logging enabled: C:\Users\bondi\Partkeeper_DB\logs\partkeeper.log max_bytes=1000000 backup_count=5
+2026-06-05 17:00:47,758 [INFO] partkeeper.app: PartKeeper window initialized
+2026-06-05 17:00:51,870 [INFO] partkeeper.app: Application closing
+2026-06-05 23:48:21,507 [INFO] partkeeper.logging_config: Logging enabled: C:\Users\bondi\Partkeeper_DB\logs\partkeeper.log max_bytes=1000000 backup_count=5
+2026-06-05 23:48:22,739 [INFO] partkeeper.app: PartKeeper window initialized
+2026-06-05 23:56:12,999 [INFO] partkeeper.db: Component card updated live: id=35 mpn=CC0603KRX7R9BB104
+2026-06-05 23:56:13,003 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-05 23:56:13,011 [INFO] partkeeper.db: Database snapshot restored: components=278 lots=295
+2026-06-05 23:56:37,681 [INFO] partkeeper.db: Component card updated live: id=37 mpn=CC0603KRX7R9BB474
+2026-06-05 23:56:37,685 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-05 23:56:37,695 [INFO] partkeeper.db: Database snapshot restored: components=278 lots=295
+2026-06-06 01:03:58,920 [INFO] partkeeper.app: Application closing
+2026-06-06 01:06:01,158 [INFO] partkeeper.logging_config: Logging enabled: C:\Users\bondi\Partkeeper_DB\logs\partkeeper.log max_bytes=1000000 backup_count=5
+2026-06-06 01:29:45,654 [INFO] partkeeper.app: Application closing
+2026-06-06 01:31:59,843 [INFO] partkeeper.logging_config: Logging enabled: C:\Users\bondi\Partkeeper_DB\logs\partkeeper.log max_bytes=1000000 backup_count=5
+2026-06-06 01:32:30,629 [INFO] partkeeper.db: Component card updated: id=67 mpn=CLO5A106MQ5NUNC
+2026-06-06 01:32:30,633 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-06 01:32:30,646 [INFO] partkeeper.db: Database snapshot restored: components=278 lots=295
+2026-06-06 01:32:45,083 [INFO] partkeeper.undo: Undo: Сохранение изменений карточки
+2026-06-06 01:32:45,095 [INFO] partkeeper.db: Database snapshot restored: components=278 lots=295
+2026-06-06 01:32:57,985 [INFO] partkeeper.db: Component card updated: id=67 mpn=CLO5A106MQ5NUNC
+2026-06-06 01:32:57,988 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-06 01:32:57,997 [INFO] partkeeper.db: Database snapshot restored: components=278 lots=295
+2026-06-06 01:33:21,099 [INFO] partkeeper.db: Component card updated: id=67 mpn=CLO5A106MQ5NUNC
+2026-06-06 01:33:21,102 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-06 01:33:21,114 [INFO] partkeeper.db: Database snapshot restored: components=278 lots=295
+2026-06-06 01:37:01,542 [INFO] partkeeper.app: Application closing
+2026-06-06 11:06:17,425 [INFO] partkeeper.logging_config: Logging enabled: C:\Users\bondi\Partkeeper_DB\logs\partkeeper.log max_bytes=1000000 backup_count=5
+2026-06-06 11:06:18,650 [INFO] partkeeper.app: PartKeeper window initialized
+2026-06-06 11:09:06,263 [INFO] partkeeper.db: Component card updated: id=29 mpn=RL0805FR-070R01L
+2026-06-06 11:09:06,268 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-06 11:09:06,279 [INFO] partkeeper.db: Database snapshot restored: components=278 lots=295
+2026-06-06 11:09:30,515 [INFO] partkeeper.db: Component card updated: id=29 mpn=RL0805FR-070R01L
+2026-06-06 11:09:30,517 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-06 11:09:30,524 [INFO] partkeeper.db: Database snapshot restored: components=278 lots=295
+2026-06-06 15:27:40,790 [INFO] partkeeper.app: Application closing
+2026-06-11 16:10:59,264 [INFO] partkeeper.logging_config: Logging enabled: C:\Users\bondi\Partkeeper_DB\logs\partkeeper.log max_bytes=1000000 backup_count=5
+2026-06-11 16:10:59,921 [INFO] __main__: PartKeeper window initialized
+2026-06-11 16:11:25,027 [INFO] __main__: Application closing
+2026-06-11 18:36:31,520 [INFO] partkeeper.logging_config: Logging enabled: C:\Users\bondi\Partkeeper_DB\logs\partkeeper.log max_bytes=1000000 backup_count=5
+2026-06-11 18:36:31,944 [INFO] __main__: PartKeeper window initialized
+2026-06-11 23:52:32,487 [INFO] __main__: Application closing
+2026-06-12 09:18:05,330 [INFO] partkeeper.logging_config: Logging enabled: C:\Users\bondi\Partkeeper_DB\logs\partkeeper.log max_bytes=1000000 backup_count=5
+2026-06-12 09:18:05,718 [INFO] __main__: PartKeeper window initialized

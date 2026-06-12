@@ -9,10 +9,4 @@
 *.db-shm
 *.db-journal
 backups/
-<<<<<<< HEAD
 
-=======
-Partkeeper_DB/
-logs/
->>>>>>> 29ea7bb (add components by PK17.4)
-# Git should store schema.sql, data.sql and db_manifest.json, not the live DB.
