@@ -9,5 +9,5 @@
 *.db-shm
 *.db-journal
 backups/
-
+logs/
 # Git should store schema.sql, data.sql and db_manifest.json, not the live DB.
