@@ -3200,3 +3200,1030 @@ Reference&#32;
 2026-06-14 19:43:54,060 [INFO] __main__: PartKeeper window initialized
 2026-06-14 19:47:00,788 [INFO] partkeeper.db: Database opened: C:\Users\bondi\Partkeeper_DB\.components_new.sqlite3.tmp-1f47b15791aa48b588d49eb08fd077cf
 2026-06-14 20:04:07,294 [INFO] __main__: Application closing
+2026-06-16 13:23:33,940 [INFO] partkeeper.logging_config: Logging enabled: C:\Users\d.ryzhov\documents\Partkeeper_DB\logs\partkeeper.log max_bytes=1000000 backup_count=5
+2026-06-16 13:23:34,708 [INFO] __main__: PartKeeper window initialized
+2026-06-16 13:25:39,292 [INFO] __main__: Application closing
+2026-06-16 13:26:05,122 [INFO] partkeeper.logging_config: Logging enabled: C:\Users\d.ryzhov\documents\Partkeeper_DB\logs\partkeeper.log max_bytes=1000000 backup_count=5
+2026-06-16 13:26:05,616 [INFO] __main__: PartKeeper window initialized
+2026-06-16 13:26:33,404 [ERROR] __main__: Create DB from dumps failed
+Traceback (most recent call last):
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\app.py", line 5376, in create_database_from_dumps_dialog
+    created_path = self.run_modal_operation(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\app.py", line 5714, in run_modal_operation
+    return func()
+           ^^^^^^
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\app.py", line 5379, in <lambda>
+    lambda: create_database_from_dumps(output, dump_dir, overwrite=overwrite),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\db_exchange.py", line 302, in create_database_from_dumps
+    raise FileNotFoundError(f"В папке {directory} нужны {DUMP_SCHEMA_FILE} и {DUMP_DATA_FILE}")
+FileNotFoundError: В папке C:\Users\d.ryzhov\Documents\PartKeeper_DB\Partkeeper_DB нужны schema.sql и data.sql
+2026-06-16 13:27:04,403 [INFO] partkeeper.db: Database opened: C:\Users\d.ryzhov\Documents\PartKeeper_DB\.components1.sqlite3.tmp-eb544d37b23246089a9595df6c4fe858
+2026-06-16 13:27:07,012 [INFO] partkeeper.db: Database opened: C:\Users\d.ryzhov\Documents\PartKeeper_DB\components1.sqlite3
+2026-06-16 13:27:07,051 [INFO] partkeeper.logging_config: Logging enabled: C:\Users\d.ryzhov\Documents\PartKeeper_DB\logs\partkeeper.log max_bytes=1000000 backup_count=5
+2026-06-16 14:01:03,893 [INFO] __main__: Application closing
+2026-06-16 14:03:43,951 [INFO] partkeeper.logging_config: Logging enabled: C:\Users\d.ryzhov\Documents\PartKeeper_DB\logs\partkeeper.log max_bytes=1000000 backup_count=5
+2026-06-16 14:03:44,928 [INFO] __main__: PartKeeper window initialized
+2026-06-16 14:05:38,906 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=NE555P
+2026-06-16 14:06:14,283 [INFO] __main__: Application closing
+2026-06-16 14:07:18,173 [INFO] partkeeper.logging_config: Logging enabled: C:\Users\d.ryzhov\Documents\PartKeeper_DB\logs\partkeeper.log max_bytes=1000000 backup_count=5
+2026-06-16 14:07:19,009 [INFO] __main__: PartKeeper window initialized
+2026-06-16 14:08:08,801 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=RT0603BRD072R49L
+2026-06-16 14:08:09,623 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=RT0603BRD072R49L: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=RT0603BRD072R49L
+2026-06-16 14:08:58,116 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=RT0603BRD072R49L
+2026-06-16 14:08:58,753 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=RT0603BRD072R49L: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=RT0603BRD072R49L
+2026-06-16 14:10:30,394 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=RT0603BRD072R49L
+2026-06-16 14:10:31,064 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=RT0603BRD072R49L: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=RT0603BRD072R49L
+2026-06-16 14:11:35,335 [INFO] partkeeper.db: Component card updated: id=420 mpn=RT0603BRD072R49L
+2026-06-16 14:11:35,362 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-16 14:11:35,398 [INFO] partkeeper.db: Database snapshot restored: components=408 lots=431
+2026-06-16 14:12:21,225 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item11083647
+2026-06-16 14:12:22,048 [ERROR] partkeeper.workflows: Scan parse failed
+Traceback (most recent call last):
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\workflows.py", line 1437, in process_scan_text
+    parsed = parse_from_url(text) if looks_like_url(text) else parse_from_label_text(text)
+             ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\parser.py", line 553, in parse_from_url
+    response.raise_for_status()
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\.venv\Lib\site-packages\requests\models.py", line 1028, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.elitan.ru/price/item11083647
+2026-06-16 14:13:13,531 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item11083647
+2026-06-16 14:13:14,350 [ERROR] partkeeper.workflows: Scan parse failed
+Traceback (most recent call last):
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\workflows.py", line 1437, in process_scan_text
+    parsed = parse_from_url(text) if looks_like_url(text) else parse_from_label_text(text)
+             ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\parser.py", line 553, in parse_from_url
+    response.raise_for_status()
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\.venv\Lib\site-packages\requests\models.py", line 1028, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.elitan.ru/price/item11083647
+2026-06-16 14:13:14,395 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item11083647
+2026-06-16 14:13:15,244 [ERROR] partkeeper.workflows: Scan parse failed
+Traceback (most recent call last):
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\workflows.py", line 1437, in process_scan_text
+    parsed = parse_from_url(text) if looks_like_url(text) else parse_from_label_text(text)
+             ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\parser.py", line 553, in parse_from_url
+    response.raise_for_status()
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\.venv\Lib\site-packages\requests\models.py", line 1028, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.elitan.ru/price/item11083647
+2026-06-16 14:14:14,586 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=MT25QU256ABA1EW7-0SIT
+2026-06-16 14:14:16,264 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=MT25QU256ABA1EW7-0SIT: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=MT25QU256ABA1EW7-0SIT
+2026-06-16 14:14:57,277 [INFO] partkeeper.undo: Redo: Изменение категорий
+2026-06-16 14:14:57,339 [INFO] partkeeper.db: Database snapshot restored: components=408 lots=431
+2026-06-16 14:15:45,773 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=760308105214
+2026-06-16 14:15:46,681 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=760308105214: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=760308105214
+2026-06-16 14:16:28,729 [INFO] partkeeper.undo: Redo: Изменение категорий
+2026-06-16 14:16:28,774 [INFO] partkeeper.db: Database snapshot restored: components=409 lots=432
+2026-06-16 14:17:34,292 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=TNPW04025K05BEED
+2026-06-16 14:17:35,084 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=TNPW04025K05BEED: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=TNPW04025K05BEED
+2026-06-16 14:28:10,507 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=760308105309
+2026-06-16 14:28:11,360 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=760308105309: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=760308105309
+2026-06-16 14:29:56,619 [INFO] partkeeper.undo: Redo: Изменение мест хранения
+2026-06-16 14:29:56,652 [INFO] partkeeper.db: Database snapshot restored: components=412 lots=435
+2026-06-16 14:30:59,922 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=RC0201JR-710KL
+2026-06-16 14:31:00,634 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=RC0201JR-710KL: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=RC0201JR-710KL
+2026-06-16 14:31:30,248 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=RC0201JR-0710KL
+2026-06-16 14:31:30,881 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=RC0201JR-0710KL: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=RC0201JR-0710KL
+2026-06-16 14:33:44,379 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=LQP03HQ4N7H02D
+2026-06-16 14:33:45,995 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=LQP03HQ4N7H02D: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=LQP03HQ4N7H02D
+2026-06-16 14:37:18,418 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item605703
+2026-06-16 14:37:19,307 [ERROR] partkeeper.workflows: Scan parse failed
+Traceback (most recent call last):
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\workflows.py", line 1437, in process_scan_text
+    parsed = parse_from_url(text) if looks_like_url(text) else parse_from_label_text(text)
+             ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\parser.py", line 553, in parse_from_url
+    response.raise_for_status()
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\.venv\Lib\site-packages\requests\models.py", line 1028, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.elitan.ru/price/item605703
+2026-06-16 14:37:25,016 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item605703
+2026-06-16 14:37:26,035 [ERROR] partkeeper.workflows: Scan parse failed
+Traceback (most recent call last):
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\workflows.py", line 1437, in process_scan_text
+    parsed = parse_from_url(text) if looks_like_url(text) else parse_from_label_text(text)
+             ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\parser.py", line 553, in parse_from_url
+    response.raise_for_status()
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\.venv\Lib\site-packages\requests\models.py", line 1028, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.elitan.ru/price/item605703
+2026-06-16 14:37:28,333 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item605703
+2026-06-16 14:37:29,192 [ERROR] partkeeper.workflows: Scan parse failed
+Traceback (most recent call last):
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\workflows.py", line 1437, in process_scan_text
+    parsed = parse_from_url(text) if looks_like_url(text) else parse_from_label_text(text)
+             ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\parser.py", line 553, in parse_from_url
+    response.raise_for_status()
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\.venv\Lib\site-packages\requests\models.py", line 1028, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.elitan.ru/price/item605703
+2026-06-16 14:37:31,884 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item605703
+2026-06-16 14:37:32,746 [ERROR] partkeeper.workflows: Scan parse failed
+Traceback (most recent call last):
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\workflows.py", line 1437, in process_scan_text
+    parsed = parse_from_url(text) if looks_like_url(text) else parse_from_label_text(text)
+             ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\parser.py", line 553, in parse_from_url
+    response.raise_for_status()
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\.venv\Lib\site-packages\requests\models.py", line 1028, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.elitan.ru/price/item605703
+2026-06-16 14:37:32,802 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item605703
+2026-06-16 14:37:33,739 [ERROR] partkeeper.workflows: Scan parse failed
+Traceback (most recent call last):
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\workflows.py", line 1437, in process_scan_text
+    parsed = parse_from_url(text) if looks_like_url(text) else parse_from_label_text(text)
+             ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\parser.py", line 553, in parse_from_url
+    response.raise_for_status()
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\.venv\Lib\site-packages\requests\models.py", line 1028, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.elitan.ru/price/item605703
+2026-06-16 14:37:33,743 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item605703
+2026-06-16 14:37:34,661 [ERROR] partkeeper.workflows: Scan parse failed
+Traceback (most recent call last):
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\workflows.py", line 1437, in process_scan_text
+    parsed = parse_from_url(text) if looks_like_url(text) else parse_from_label_text(text)
+             ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\parser.py", line 553, in parse_from_url
+    response.raise_for_status()
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\.venv\Lib\site-packages\requests\models.py", line 1028, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.elitan.ru/price/item605703
+2026-06-16 14:37:34,667 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item605703
+2026-06-16 14:37:35,533 [ERROR] partkeeper.workflows: Scan parse failed
+Traceback (most recent call last):
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\workflows.py", line 1437, in process_scan_text
+    parsed = parse_from_url(text) if looks_like_url(text) else parse_from_label_text(text)
+             ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\parser.py", line 553, in parse_from_url
+    response.raise_for_status()
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\.venv\Lib\site-packages\requests\models.py", line 1028, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.elitan.ru/price/item605703
+2026-06-16 14:38:30,565 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=GRM188R72A104KA35D
+2026-06-16 14:38:31,850 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=GRM188R72A104KA35D: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=GRM188R72A104KA35D
+2026-06-16 14:40:38,443 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item679777
+2026-06-16 14:40:39,126 [ERROR] partkeeper.workflows: Scan parse failed
+Traceback (most recent call last):
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\workflows.py", line 1437, in process_scan_text
+    parsed = parse_from_url(text) if looks_like_url(text) else parse_from_label_text(text)
+             ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\parser.py", line 553, in parse_from_url
+    response.raise_for_status()
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\.venv\Lib\site-packages\requests\models.py", line 1028, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.elitan.ru/price/item679777
+2026-06-16 14:40:53,445 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item679777
+2026-06-16 14:40:54,827 [ERROR] partkeeper.workflows: Scan parse failed
+Traceback (most recent call last):
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\workflows.py", line 1437, in process_scan_text
+    parsed = parse_from_url(text) if looks_like_url(text) else parse_from_label_text(text)
+             ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\parser.py", line 553, in parse_from_url
+    response.raise_for_status()
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\.venv\Lib\site-packages\requests\models.py", line 1028, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.elitan.ru/price/item679777
+2026-06-16 14:41:39,729 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=CC0402JRNPO9BN120
+2026-06-16 14:41:40,634 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=CC0402JRNPO9BN120: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=CC0402JRNPO9BN120
+2026-06-16 14:43:44,228 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=RC0402FR-0700KL
+2026-06-16 14:43:46,568 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=RC0402FR-0700KL: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=RC0402FR-0700KL
+2026-06-16 14:44:11,023 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=RC0402FR-07100KL
+2026-06-16 14:44:12,142 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=RC0402FR-07100KL: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=RC0402FR-07100KL
+2026-06-16 14:45:29,133 [INFO] partkeeper.db: Lot inserted: id=446 component_id=38 quantity=10000
+2026-06-16 14:46:11,350 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=RC0402FR-071ML
+2026-06-16 14:46:12,340 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=RC0402FR-071ML: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=RC0402FR-071ML
+2026-06-16 14:47:11,940 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=SS24FL
+2026-06-16 14:47:12,753 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=SS24FL: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=SS24FL
+2026-06-16 14:48:41,365 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=GRM21B5C1H223JA01L
+2026-06-16 14:48:42,351 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=GRM21B5C1H223JA01L: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=GRM21B5C1H223JA01L
+2026-06-16 14:49:40,535 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=T521D107M025ATE040
+2026-06-16 14:49:41,419 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=T521D107M025ATE040: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=T521D107M025ATE040
+2026-06-16 14:49:58,191 [INFO] partkeeper.undo: Redo: Изменение категорий
+2026-06-16 14:49:58,246 [INFO] partkeeper.db: Database snapshot restored: components=419 lots=443
+2026-06-16 14:50:43,447 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=LPS4018-153M
+2026-06-16 14:50:44,492 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=LPS4018-153M: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=LPS4018-153M
+2026-06-16 14:51:06,689 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=NE555P
+2026-06-16 14:51:18,122 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=LPS4018-153M
+2026-06-16 14:51:18,896 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=LPS4018-153M: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=LPS4018-153M
+2026-06-16 14:51:26,750 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=LPS4018-153M
+2026-06-16 14:51:27,500 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=LPS4018-153M: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=LPS4018-153M
+2026-06-16 14:52:58,317 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item9827334
+2026-06-16 14:52:59,390 [ERROR] partkeeper.workflows: Scan parse failed
+Traceback (most recent call last):
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\workflows.py", line 1437, in process_scan_text
+    parsed = parse_from_url(text) if looks_like_url(text) else parse_from_label_text(text)
+             ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\parser.py", line 553, in parse_from_url
+    response.raise_for_status()
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\.venv\Lib\site-packages\requests\models.py", line 1028, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.elitan.ru/price/item9827334
+2026-06-16 14:54:15,498 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=LPS4018-153MRC
+2026-06-16 14:54:16,304 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=LPS4018-153MRC: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=LPS4018-153MRC
+2026-06-16 14:55:44,117 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=AC0603FR-0715KL
+2026-06-16 14:55:44,863 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=AC0603FR-0715KL: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=AC0603FR-0715KL
+2026-06-16 14:56:07,960 [INFO] partkeeper.db: Component card updated: id=389 mpn=AC0603FR-0715KL
+2026-06-16 14:56:07,975 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-16 14:56:08,000 [INFO] partkeeper.db: Database snapshot restored: components=421 lots=445
+2026-06-16 14:56:20,840 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=RC0402FR-0715KL
+2026-06-16 14:56:21,515 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=RC0402FR-0715KL: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=RC0402FR-0715KL
+2026-06-16 14:56:36,467 [INFO] partkeeper.db: Component card updated: id=391 mpn=RC0402FR-0715KL
+2026-06-16 14:56:36,487 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-16 14:56:36,513 [INFO] partkeeper.db: Database snapshot restored: components=421 lots=445
+2026-06-16 14:57:14,746 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=ICM-45686
+2026-06-16 14:57:15,391 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=ICM-45686: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=ICM-45686
+2026-06-16 14:57:29,572 [INFO] partkeeper.db: Component card updated: id=3 mpn=ICM-45686
+2026-06-16 14:57:29,587 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-16 14:57:29,675 [INFO] partkeeper.db: Database snapshot restored: components=421 lots=445
+2026-06-16 14:58:13,236 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=CL104A475KP8NNC
+2026-06-16 14:58:13,833 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=CL104A475KP8NNC: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=CL104A475KP8NNC
+2026-06-16 14:59:22,777 [INFO] partkeeper.db: Component card updated: id=434 mpn=CL104A475KP8NNC
+2026-06-16 14:59:22,795 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-16 14:59:22,830 [INFO] partkeeper.db: Database snapshot restored: components=422 lots=446
+2026-06-16 15:00:08,785 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=MLG1005S15NJT000
+2026-06-16 15:00:09,441 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=MLG1005S15NJT000: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=MLG1005S15NJT000
+2026-06-16 15:00:46,689 [INFO] partkeeper.db: Lot inserted: id=453 component_id=311 quantity=15
+2026-06-16 15:01:53,437 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=TLJA107M00R500
+2026-06-16 15:01:54,064 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=TLJA107M00R500: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=TLJA107M00R500
+2026-06-16 15:02:07,290 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=TLJA107M006R500
+2026-06-16 15:02:07,966 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=TLJA107M006R500: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=TLJA107M006R500
+2026-06-16 15:02:20,716 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=TLJA107M006R0500
+2026-06-16 15:02:21,326 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=TLJA107M006R0500: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=TLJA107M006R0500
+2026-06-16 15:31:27,736 [INFO] __main__: Application closing
+2026-06-16 15:31:33,316 [INFO] partkeeper.logging_config: Logging enabled: C:\Users\d.ryzhov\Documents\PartKeeper_DB\logs\partkeeper.log max_bytes=1000000 backup_count=5
+2026-06-16 15:31:34,031 [INFO] __main__: PartKeeper window initialized
+2026-06-16 16:15:37,184 [INFO] partkeeper.db: Lot inserted: id=455 component_id=416 quantity=15
+2026-06-16 16:16:48,531 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=BLM18EG221SN1D
+2026-06-16 16:16:49,264 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=BLM18EG221SN1D: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=BLM18EG221SN1D
+2026-06-16 16:17:33,078 [INFO] partkeeper.undo: Redo: Изменение мест хранения
+2026-06-16 16:17:33,108 [INFO] partkeeper.db: Database snapshot restored: components=424 lots=450
+2026-06-16 16:18:37,576 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=GRM1885C1H472JA01D
+2026-06-16 16:18:39,303 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=GRM1885C1H472JA01D: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=GRM1885C1H472JA01D
+2026-06-16 16:20:43,957 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=RC0402FR-071K8L
+2026-06-16 16:20:44,606 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=RC0402FR-071K8L: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=RC0402FR-071K8L
+2026-06-16 16:22:26,403 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=RT0603BRD072R49L
+2026-06-16 16:22:27,182 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=RT0603BRD072R49L: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=RT0603BRD072R49L
+2026-06-16 16:23:26,614 [INFO] partkeeper.db: Lot inserted: id=459 component_id=438 quantity=50
+2026-06-16 16:24:24,687 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=GRM1555C1H1R5CA
+2026-06-16 16:24:25,359 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=GRM1555C1H1R5CA: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=GRM1555C1H1R5CA
+2026-06-16 16:24:52,095 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=GRM1555C1H1R5CA01D
+2026-06-16 16:24:52,754 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=GRM1555C1H1R5CA01D: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=GRM1555C1H1R5CA01D
+2026-06-16 16:25:56,277 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=DMG2305UX
+2026-06-16 16:25:57,947 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=DMG2305UX: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=DMG2305UX
+2026-06-16 16:27:16,812 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=LQP03TG2N2B02D
+2026-06-16 16:27:17,473 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=LQP03TG2N2B02D: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=LQP03TG2N2B02D
+2026-06-16 16:28:17,522 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=RC0402FR-07220KL
+2026-06-16 16:28:18,283 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=RC0402FR-07220KL: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=RC0402FR-07220KL
+2026-06-16 16:28:32,350 [INFO] partkeeper.db: Component card updated: id=393 mpn=RC0402FR-07220KL
+2026-06-16 16:28:32,373 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-16 16:28:32,433 [INFO] partkeeper.db: Database snapshot restored: components=429 lots=456
+2026-06-16 16:29:15,150 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=RC0402FR-073K3L
+2026-06-16 16:29:15,845 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=RC0402FR-073K3L: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=RC0402FR-073K3L
+2026-06-16 16:29:42,482 [INFO] partkeeper.db: Component card updated: id=395 mpn=RC0402FR-073K3L
+2026-06-16 16:29:42,501 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-16 16:29:42,548 [INFO] partkeeper.db: Database snapshot restored: components=429 lots=456
+2026-06-16 16:30:20,360 [INFO] partkeeper.db: Lot inserted: id=463 component_id=395 quantity=100
+2026-06-16 16:31:58,649 [INFO] partkeeper.db: Lot inserted: id=464 component_id=390 quantity=50
+2026-06-16 16:32:38,052 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=GRM21BR71C225KA12L
+2026-06-16 16:32:38,698 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=GRM21BR71C225KA12L: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=GRM21BR71C225KA12L
+2026-06-16 16:33:59,314 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=GRM32ER71H106KA12L
+2026-06-16 16:34:00,186 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=GRM32ER71H106KA12L: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=GRM32ER71H106KA12L
+2026-06-16 16:35:29,367 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=2121320002
+2026-06-16 16:35:29,987 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=2121320002: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=2121320002
+2026-06-16 16:36:08,887 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=212132-0002
+2026-06-16 16:36:09,453 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=212132-0002: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=212132-0002
+2026-06-16 16:37:50,486 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=RC0402FR-07499RL
+2026-06-16 16:37:51,291 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=RC0402FR-07499RL: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=RC0402FR-07499RL
+2026-06-16 16:42:19,324 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=RC0402FR0730RL
+2026-06-16 16:42:19,977 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=RC0402FR0730RL: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=RC0402FR0730RL
+2026-06-16 16:42:46,923 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=RC0402FR-0730RL
+2026-06-16 16:42:47,725 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=RC0402FR-0730RL: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=RC0402FR-0730RL
+2026-06-16 16:44:35,396 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=LQW15DN100M00D
+2026-06-16 16:44:36,041 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=LQW15DN100M00D: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=LQW15DN100M00D
+2026-06-16 16:45:54,016 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=RC0402FR-0724K9L
+2026-06-16 16:45:54,605 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=RC0402FR-0724K9L: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=RC0402FR-0724K9L
+2026-06-16 16:47:45,883 [WARNING] partkeeper.component_search: Component lookup provider failed: Mouser API mpn=CC0402FRNPO9BN101: SOCKSHTTPSConnectionPool(host='api.mouser.com', port=443): Read timed out. (read timeout=18)
+2026-06-16 16:47:45,883 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=CC0402FRNPO9BN101
+2026-06-16 16:47:47,191 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=CC0402FRNPO9BN101: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=CC0402FRNPO9BN101
+2026-06-16 16:48:36,531 [INFO] partkeeper.db: Lot inserted: id=472 component_id=353 quantity=50
+2026-06-16 16:49:17,939 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=RT0402FRE0715KL
+2026-06-16 16:49:18,667 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=RT0402FRE0715KL: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=RT0402FRE0715KL
+2026-06-16 16:51:24,256 [WARNING] partkeeper.component_search: Component lookup provider failed: Mouser API mpn=ERA-2AEB97R6X: SOCKSHTTPSConnectionPool(host='api.mouser.com', port=443): Read timed out. (read timeout=18)
+2026-06-16 16:51:24,256 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=ERA-2AEB97R6X
+2026-06-16 16:51:24,901 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=ERA-2AEB97R6X: 403 Client Error: Forbidden for url: https://www.elitan.ru/search/?q=ERA-2AEB97R6X
+2026-06-16 16:51:41,002 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=ERA-2AEB97R6X
+2026-06-16 16:51:41,718 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=ERA-2AEB97R6X: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=ERA-2AEB97R6X
+2026-06-16 16:52:44,890 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=KP-3216F3C
+2026-06-16 16:52:45,251 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=KP-3216F3C: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=KP-3216F3C
+2026-06-16 16:53:00,638 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=KP-3216F3C
+2026-06-16 16:53:01,309 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=KP-3216F3C: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=KP-3216F3C
+2026-06-16 16:53:31,120 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=SMF9.0A
+2026-06-16 16:53:31,461 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=SMF9.0A: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=SMF9.0A
+2026-06-16 16:54:04,179 [INFO] partkeeper.db: Component card updated: id=280 mpn=SMF9.0A
+2026-06-16 16:54:04,193 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-16 16:54:04,235 [INFO] partkeeper.db: Database snapshot restored: components=438 lots=468
+2026-06-16 16:54:19,317 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=CC0805KRX7R9BB683
+2026-06-16 16:54:19,720 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=CC0805KRX7R9BB683: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=CC0805KRX7R9BB683
+2026-06-16 16:54:29,587 [INFO] partkeeper.db: Component card updated: id=374 mpn=CC0805KRX7R9BB683
+2026-06-16 16:54:29,597 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-16 16:54:29,635 [INFO] partkeeper.db: Database snapshot restored: components=438 lots=468
+2026-06-16 16:55:25,974 [INFO] partkeeper.db: Component card updated: id=450 mpn=ERA-2AEB97R6X
+2026-06-16 16:55:25,990 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-16 16:55:26,057 [INFO] partkeeper.db: Database snapshot restored: components=438 lots=468
+2026-06-16 17:15:22,569 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=LTC4120EUD
+2026-06-16 17:15:23,228 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=LTC4120EUD: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=LTC4120EUD
+2026-06-16 17:15:55,553 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=LTC4120
+2026-06-16 17:15:55,873 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=LTC4120: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=LTC4120
+2026-06-16 17:16:29,812 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=LTC4120EUD
+2026-06-16 17:16:30,378 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=LTC4120EUD: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=LTC4120EUD
+2026-06-16 17:18:20,535 [INFO] partkeeper.db: Component card updated: id=452 mpn=LTC4120EUD
+2026-06-16 17:18:20,546 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-16 17:18:20,573 [INFO] partkeeper.db: Database snapshot restored: components=440 lots=470
+2026-06-16 17:19:16,195 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=1210L005%2F90WR
+2026-06-16 17:19:16,777 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=1210L005/90WR: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=1210L005%2F90WR
+2026-06-16 17:21:07,935 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=GRM0335C1H180GA01
+2026-06-16 17:21:08,715 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=GRM0335C1H180GA01: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=GRM0335C1H180GA01
+2026-06-16 18:09:18,757 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=CRCW040251R0FKED
+2026-06-16 18:09:20,442 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=CRCW040251R0FKED: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=CRCW040251R0FKED
+2026-06-17 04:11:16,744 [INFO] __main__: Application closing
+2026-06-17 09:09:35,209 [INFO] partkeeper.logging_config: Logging enabled: C:\Users\d.ryzhov\Documents\PartKeeper_DB\logs\partkeeper.log max_bytes=1000000 backup_count=5
+2026-06-17 09:17:43,207 [INFO] partkeeper.logging_config: Logging enabled: C:\Users\d.ryzhov\Documents\PartKeeper_DB\logs\partkeeper.log max_bytes=1000000 backup_count=5
+2026-06-17 09:17:44,363 [INFO] __main__: PartKeeper window initialized
+2026-06-17 09:45:49,826 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=MM3Z39VG
+2026-06-17 09:45:50,514 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=MM3Z39VG: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=MM3Z39VG
+2026-06-17 09:49:11,945 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=MM3Z39VC
+2026-06-17 09:49:12,553 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=MM3Z39VC: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=MM3Z39VC
+2026-06-17 09:52:15,384 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=GRPB031VWVN-RC
+2026-06-17 09:52:16,065 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=GRPB031VWVN-RC: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=GRPB031VWVN-RC
+2026-06-17 10:04:39,541 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=OPA2391YBJ
+2026-06-17 10:04:40,835 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=OPA2391YBJ: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=OPA2391YBJ
+2026-06-17 10:07:33,268 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=OPA2391YBJR
+2026-06-17 10:07:33,954 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=OPA2391YBJR: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=OPA2391YBJR
+2026-06-17 10:08:35,310 [INFO] partkeeper.db: Lot inserted: id=483 component_id=201 quantity=20
+2026-06-17 10:10:47,099 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=LIS2MDL
+2026-06-17 10:10:47,864 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=LIS2MDL: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=LIS2MDL
+2026-06-17 10:13:24,403 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=LIS2MDLTR
+2026-06-17 10:13:25,241 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=LIS2MDLTR: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=LIS2MDLTR
+2026-06-17 10:15:11,527 [INFO] partkeeper.db: Lot inserted: id=485 component_id=458 quantity=6
+2026-06-17 10:18:44,197 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=2121320005
+2026-06-17 10:18:45,007 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=2121320005: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=2121320005
+2026-06-17 10:19:09,980 [INFO] partkeeper.db: Lot inserted: id=486 component_id=24 quantity=25
+2026-06-17 10:20:06,393 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=2121340002
+2026-06-17 10:20:07,344 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=2121340002: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=2121340002
+2026-06-17 10:22:44,391 [INFO] partkeeper.db: Lot inserted: id=487 component_id=133 quantity=20
+2026-06-17 10:39:29,974 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=2900-0-15-20-76-14-11-0
+2026-06-17 10:39:30,806 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=2900-0-15-20-76-14-11-0: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=2900-0-15-20-76-14-11-0
+2026-06-17 10:42:11,263 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=RT0603BRD074K99L
+2026-06-17 10:42:11,959 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=RT0603BRD074K99L: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=RT0603BRD074K99L
+2026-06-17 10:42:49,436 [INFO] partkeeper.db: Lot inserted: id=489 component_id=28 quantity=50
+2026-06-17 10:45:52,315 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=RT0402BRD07499RL
+2026-06-17 10:45:53,245 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=RT0402BRD07499RL: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=RT0402BRD07499RL
+2026-06-17 10:47:12,948 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=RT0402BRD07499RL
+2026-06-17 10:47:13,673 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=RT0402BRD07499RL: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=RT0402BRD07499RL
+2026-06-17 11:26:19,420 [INFO] partkeeper.db: Component card updated: id=461 mpn=RT0402BRD07499RL
+2026-06-17 11:26:19,441 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-17 11:26:19,480 [INFO] partkeeper.db: Database snapshot restored: components=448 lots=484
+2026-06-17 11:34:07,305 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=RC0805JR-070RL
+2026-06-17 11:34:08,106 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=RC0805JR-070RL: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=RC0805JR-070RL
+2026-06-17 11:34:58,122 [INFO] partkeeper.db: Component card updated: id=401 mpn=RC0805JR-070RL
+2026-06-17 11:34:58,142 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-17 11:34:58,190 [INFO] partkeeper.db: Database snapshot restored: components=448 lots=484
+2026-06-17 12:00:18,870 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=STM32G474CEU6
+2026-06-17 12:00:19,674 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=STM32G474CEU6: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=STM32G474CEU6
+2026-06-17 12:31:46,701 [INFO] partkeeper.logging_config: Logging enabled: C:\Users\d.ryzhov\Documents\PartKeeper_DB\logs\partkeeper.log max_bytes=1000000 backup_count=5
+2026-06-17 12:31:48,555 [INFO] __main__: PartKeeper window initialized
+2026-06-17 12:32:56,150 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=RC0402FR-0751KL
+2026-06-17 12:32:57,864 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=RC0402FR-0751KL: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=RC0402FR-0751KL
+2026-06-17 12:36:58,619 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=GRM188R61E105K
+2026-06-17 12:36:59,536 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=GRM188R61E105K: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=GRM188R61E105K
+2026-06-17 12:37:43,292 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=CRCW040251R0FKED
+2026-06-17 12:37:44,280 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=CRCW040251R0FKED: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=CRCW040251R0FKED
+2026-06-17 12:38:15,574 [INFO] partkeeper.db: Lot inserted: id=493 component_id=455 quantity=349
+2026-06-17 12:40:48,225 [INFO] partkeeper.undo: Redo: Изменение мест хранения
+2026-06-17 12:40:48,269 [INFO] partkeeper.db: Database snapshot restored: components=450 lots=487
+2026-06-17 12:41:36,631 [INFO] partkeeper.bom: Analyzing BOM: C:\Users\d.ryzhov\Desktop\PE1.1.2_BOM.xlsx
+2026-06-17 12:41:36,959 [ERROR] __main__: BOM analysis failed
+Traceback (most recent call last):
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\app.py", line 5762, in analyze_bom_file
+    items, warnings = self.run_modal_operation("Анализ BOM", "Сверяю BOM с физической базой компонентов...", lambda: analyze_bom(self.db, path))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\app.py", line 5786, in run_modal_operation
+    return func()
+           ^^^^^^
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\app.py", line 5762, in <lambda>
+    items, warnings = self.run_modal_operation("Анализ BOM", "Сверяю BOM с физической базой компонентов...", lambda: analyze_bom(self.db, path))
+                                                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\bom.py", line 83, in analyze_bom
+    mpn = normalize_mpn(clean(row.get("mpn"))) or guess_mpn_from_text(row_text)
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\parser.py", line 414, in guess_mpn_from_text
+    clean_text = unquote(text).replace("\n", " ")
+                 ^^^^^^^
+NameError: name 'unquote' is not defined
+2026-06-17 12:41:46,840 [INFO] partkeeper.bom: Analyzing BOM: C:\Users\d.ryzhov\Desktop\PE1.1.2_BOM.xlsx
+2026-06-17 12:41:47,028 [ERROR] __main__: BOM analysis failed
+Traceback (most recent call last):
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\app.py", line 5762, in analyze_bom_file
+    items, warnings = self.run_modal_operation("Анализ BOM", "Сверяю BOM с физической базой компонентов...", lambda: analyze_bom(self.db, path))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\app.py", line 5786, in run_modal_operation
+    return func()
+           ^^^^^^
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\app.py", line 5762, in <lambda>
+    items, warnings = self.run_modal_operation("Анализ BOM", "Сверяю BOM с физической базой компонентов...", lambda: analyze_bom(self.db, path))
+                                                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\bom.py", line 83, in analyze_bom
+    mpn = normalize_mpn(clean(row.get("mpn"))) or guess_mpn_from_text(row_text)
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\parser.py", line 414, in guess_mpn_from_text
+    clean_text = unquote(text).replace("\n", " ")
+                 ^^^^^^^
+NameError: name 'unquote' is not defined
+2026-06-17 12:48:02,826 [INFO] __main__: Application closing
+2026-06-17 12:49:38,747 [INFO] partkeeper.logging_config: Logging enabled: C:\Users\d.ryzhov\Documents\PartKeeper_DB\logs\partkeeper.log max_bytes=1000000 backup_count=5
+2026-06-17 12:49:40,124 [INFO] __main__: PartKeeper window initialized
+2026-06-17 12:50:52,282 [INFO] partkeeper.bom: Analyzing BOM: C:\Users\d.ryzhov\Desktop\PE1.1.2_BOM.xlsx
+2026-06-17 12:50:52,477 [INFO] partkeeper.bom: BOM analyzed: rows=94 grouped=65 warnings=1
+2026-06-17 13:56:42,928 [INFO] __main__: Application closing
+2026-06-17 13:57:37,617 [INFO] partkeeper.logging_config: Logging enabled: C:\Users\d.ryzhov\Documents\PartKeeper_DB\logs\partkeeper.log max_bytes=1000000 backup_count=5
+2026-06-17 13:57:40,171 [INFO] __main__: PartKeeper window initialized
+2026-06-17 13:58:32,555 [INFO] partkeeper.bom: Analyzing BOM: C:\Users\d.ryzhov\Desktop\PE1.1.2_BOM.xlsx
+2026-06-17 13:58:39,731 [INFO] partkeeper.bom: BOM analyzed: rows=94 grouped=65 warnings=1
+2026-06-17 14:11:28,606 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=KPG-1608SURKC-T
+2026-06-17 14:11:29,356 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=KPG-1608SURKC-T: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=KPG-1608SURKC-T
+2026-06-17 14:15:22,692 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=GRM188R61E106M
+2026-06-17 14:15:23,893 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=GRM188R61E106M: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=GRM188R61E106M
+2026-06-17 14:20:11,203 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=GRM188R61E106MA73D
+2026-06-17 14:20:11,749 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=GRM188R61E106MA73D: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=GRM188R61E106MA73D
+2026-06-17 14:22:00,290 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=LP2985-33DBV
+2026-06-17 14:22:00,778 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=LP2985-33DBV: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=LP2985-33DBV
+2026-06-17 14:23:31,921 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=LP2985-33DBVR
+2026-06-17 14:23:32,404 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=LP2985-33DBVR: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=LP2985-33DBVR
+2026-06-17 14:31:40,150 [INFO] partkeeper.db: Zero lot replaced: id=427 component_id=410 quantity=25
+2026-06-17 14:32:22,340 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=GRM1555C1H200JA01D
+2026-06-17 14:32:23,022 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=GRM1555C1H200JA01D: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=GRM1555C1H200JA01D
+2026-06-17 14:34:25,336 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=PCA9685PW
+2026-06-17 14:34:26,283 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=PCA9685PW: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=PCA9685PW
+2026-06-17 14:39:59,080 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=GSC8530YA-16R2700
+2026-06-17 14:39:59,672 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=GSC8530YA-16R2700: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=GSC8530YA-16R2700
+2026-06-17 14:40:17,111 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=BAS70DW-05-7-F
+2026-06-17 14:40:17,434 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=BAS70DW-05-7-F: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=BAS70DW-05-7-F
+2026-06-17 14:41:43,692 [INFO] partkeeper.db: Component card updated: id=117 mpn=BAS70DW-05-7-F
+2026-06-17 14:41:43,753 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-17 14:41:43,856 [INFO] partkeeper.db: Database snapshot restored: components=454 lots=490
+2026-06-17 14:42:10,623 [WARNING] partkeeper.component_search: Component lookup provider failed: Mouser API mpn=BNO085: HTTP 503: <HTML><HEAD><TITLE>Error</TITLE></HEAD><BODY>
+An error occurred while processing your request.<p>
+Reference&#32;&#35;102&#46;d3560e17&#46;1781696573&#46;2fb211bd
+<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;102&#46;d3560e17&#46;1
+2026-06-17 14:42:10,624 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=BNO085
+2026-06-17 14:42:12,820 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=BNO085: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=BNO085
+2026-06-17 14:43:37,336 [INFO] partkeeper.db: Component card updated: id=278 mpn=LP56235-683MRC
+2026-06-17 14:43:37,350 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-17 14:43:37,388 [INFO] partkeeper.db: Database snapshot restored: components=454 lots=490
+2026-06-17 14:43:51,522 [INFO] partkeeper.db: Component card updated: id=278 mpn=LP56235-683MRC
+2026-06-17 14:43:51,536 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-17 14:43:51,563 [INFO] partkeeper.db: Database snapshot restored: components=454 lots=490
+2026-06-17 14:44:23,898 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=BCR421UW6Q-7
+2026-06-17 14:44:26,047 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=BCR421UW6Q-7: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=BCR421UW6Q-7
+2026-06-17 14:44:43,390 [INFO] partkeeper.db: Component card updated: id=294 mpn=BCR421UW6Q-7
+2026-06-17 14:44:43,438 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-17 14:44:43,518 [INFO] partkeeper.db: Database snapshot restored: components=454 lots=490
+2026-06-17 14:44:54,570 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=AC0201FR-0715KL
+2026-06-17 14:44:55,493 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=AC0201FR-0715KL: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=AC0201FR-0715KL
+2026-06-17 14:45:08,223 [INFO] partkeeper.db: Component card updated: id=107 mpn=AC0201FR-0715KL
+2026-06-17 14:45:08,239 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-17 14:45:08,284 [INFO] partkeeper.db: Database snapshot restored: components=454 lots=490
+2026-06-17 14:45:21,320 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=DL4733A
+2026-06-17 14:45:21,658 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=DL4733A: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=DL4733A
+2026-06-17 14:46:28,345 [INFO] partkeeper.undo: Redo: Исправление MPN
+2026-06-17 14:46:28,378 [INFO] partkeeper.db: Database snapshot restored: components=454 lots=490
+2026-06-17 14:46:42,105 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=DL4733A-TP
+2026-06-17 14:46:43,089 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=DL4733A-TP: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=DL4733A-TP
+2026-06-17 14:47:34,614 [INFO] partkeeper.db: Component card updated: id=415 mpn=DL4733A-TP
+2026-06-17 14:47:34,629 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-17 14:47:34,665 [INFO] partkeeper.db: Database snapshot restored: components=454 lots=490
+2026-06-17 14:47:59,751 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=LTC5507ES6%23TRMPBF
+2026-06-17 14:48:02,514 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=LTC5507ES6#TRMPBF: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=LTC5507ES6%23TRMPBF
+2026-06-17 14:48:20,882 [INFO] partkeeper.db: Component card updated: id=208 mpn=LTC5507ES6#TRMPBF
+2026-06-17 14:48:20,896 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-17 14:48:20,982 [INFO] partkeeper.db: Database snapshot restored: components=454 lots=490
+2026-06-17 14:48:40,926 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=BLM18EG221SN1D
+2026-06-17 14:48:42,001 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=BLM18EG221SN1D: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=BLM18EG221SN1D
+2026-06-17 14:48:56,913 [INFO] partkeeper.db: Component card updated: id=436 mpn=blm18eg221sn1d
+2026-06-17 14:48:56,928 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-17 14:48:56,956 [INFO] partkeeper.db: Database snapshot restored: components=454 lots=490
+2026-06-17 14:49:15,697 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=B0505MT-1WR4
+2026-06-17 14:49:17,643 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=B0505MT-1WR4: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=B0505MT-1WR4
+2026-06-17 14:49:32,796 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=ZMM1
+2026-06-17 14:49:33,560 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=ZMM1: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=ZMM1
+2026-06-17 14:49:41,631 [INFO] partkeeper.db: Component card updated: id=126 mpn=ZMM1
+2026-06-17 14:49:41,645 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-17 14:49:41,677 [INFO] partkeeper.db: Database snapshot restored: components=454 lots=490
+2026-06-17 14:49:57,292 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=BC857BS
+2026-06-17 14:50:06,506 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=BC857BS: SOCKSHTTPSConnectionPool(host='www.elitan.ru', port=443): Read timed out. (read timeout=9)
+2026-06-17 14:50:59,432 [INFO] partkeeper.db: Component card updated: id=127 mpn=BC857BS
+2026-06-17 14:50:59,450 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-17 14:50:59,489 [INFO] partkeeper.db: Database snapshot restored: components=454 lots=490
+2026-06-17 14:57:08,078 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=RC0402FR-0720RL
+2026-06-17 14:57:09,237 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=RC0402FR-0720RL: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=RC0402FR-0720RL
+2026-06-17 15:01:05,857 [WARNING] partkeeper.db: Component deleted: id=295
+2026-06-17 15:01:05,889 [INFO] partkeeper.undo: Redo: Удаление компонента
+2026-06-17 15:01:05,992 [INFO] partkeeper.db: Database snapshot restored: components=454 lots=490
+2026-06-17 15:54:22,982 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item9857227
+2026-06-17 15:54:26,739 [ERROR] partkeeper.workflows: Scan parse failed
+Traceback (most recent call last):
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\.venv\Lib\site-packages\socks.py", line 614, in _negotiate_SOCKS4
+    addr_bytes = socket.inet_aton(dest_addr)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: illegal IP address string passed to inet_aton
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\.venv\Lib\site-packages\socks.py", line 809, in connect
+    negotiate(self, dest_addr, dest_port)
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\.venv\Lib\site-packages\socks.py", line 622, in _negotiate_SOCKS4
+    socket.gethostbyname(dest_addr))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11002] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\.venv\Lib\site-packages\urllib3\contrib\socks.py", line 110, in _new_conn
+    conn = socks.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\.venv\Lib\site-packages\socks.py", line 209, in create_connection
+    raise err
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\.venv\Lib\site-packages\socks.py", line 199, in create_connection
+    sock.connect((remote_host, remote_port))
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\.venv\Lib\site-packages\socks.py", line 47, in wrapper
+    return function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\.venv\Lib\site-packages\socks.py", line 814, in connect
+    raise GeneralProxyError("Socket error", error)
+socks.GeneralProxyError: Socket error: [Errno 11002] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\.venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\.venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\.venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\.venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\.venv\Lib\site-packages\urllib3\connection.py", line 759, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\.venv\Lib\site-packages\urllib3\contrib\socks.py", line 141, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: SOCKSHTTPSConnection(host='www.elitan.ru', port=443): Failed to establish a new connection: [Errno 11002] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\.venv\Lib\site-packages\requests\adapters.py", line 645, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\.venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\.venv\Lib\site-packages\urllib3\util\retry.py", line 535, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: SOCKSHTTPSConnectionPool(host='www.elitan.ru', port=443): Max retries exceeded with url: /price/item9857227 (Caused by NewConnectionError("SOCKSHTTPSConnection(host='www.elitan.ru', port=443): Failed to establish a new connection: [Errno 11002] getaddrinfo failed"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\workflows.py", line 1729, in process_scan_text
+    parsed = parse_from_url(text) if looks_like_url(text) else parse_from_label_text(text)
+             ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\partkeeper\parser.py", line 557, in parse_from_url
+    response = requests.get(url, headers=headers, timeout=timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\.venv\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\.venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\.venv\Lib\site-packages\requests\sessions.py", line 592, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\.venv\Lib\site-packages\requests\sessions.py", line 706, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\d.ryzhov\Desktop\PartKeeper\.venv\Lib\site-packages\requests\adapters.py", line 678, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: SOCKSHTTPSConnectionPool(host='www.elitan.ru', port=443): Max retries exceeded with url: /price/item9857227 (Caused by NewConnectionError("SOCKSHTTPSConnection(host='www.elitan.ru', port=443): Failed to establish a new connection: [Errno 11002] getaddrinfo failed"))
+2026-06-17 16:09:35,026 [INFO] partkeeper.db: Component card updated: id=432 mpn=T521D107M025ATE040
+2026-06-17 16:09:35,095 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-17 16:09:35,204 [INFO] partkeeper.db: Database snapshot restored: components=454 lots=490
+2026-06-17 16:37:50,564 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=TPS563240DDC
+2026-06-17 16:37:51,062 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=TPS563240DDC: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=TPS563240DDC
+2026-06-17 17:24:27,174 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item21165843
+2026-06-17 17:24:28,196 [INFO] partkeeper.parser: URL parsed: mpn=GJM0335C1H1R2WB01D category=Capacitors manufacturer=Murata search=False tech_pairs=False
+2026-06-17 17:24:40,688 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=GJM0335C1H1R2WB01D
+2026-06-17 17:24:41,390 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=GJM0335C1H1R2WB01D: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=GJM0335C1H1R2WB01D
+2026-06-17 17:25:43,527 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item18977566
+2026-06-17 17:25:44,686 [INFO] partkeeper.parser: URL parsed: mpn=GJM0335C1H1R0WB01D category=Capacitors manufacturer=Murata search=False tech_pairs=False
+2026-06-17 18:14:30,633 [INFO] partkeeper.db: Component card updated: id=459 mpn=LIS2MDLTR
+2026-06-17 18:14:30,645 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-17 18:14:30,682 [INFO] partkeeper.db: Database snapshot restored: components=455 lots=491
+2026-06-17 18:48:26,024 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item668582
+2026-06-17 18:48:26,976 [INFO] partkeeper.parser: URL parsed: mpn=MCTC0525B1000T5E category=Capacitors manufacturer= search=False tech_pairs=False
+2026-06-17 18:49:02,595 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=TNPW0805100RBEEA
+2026-06-17 18:49:03,406 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=TNPW0805100RBEEA: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=TNPW0805100RBEEA
+2026-06-17 19:14:10,329 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=LQP03HQ4N7H02D
+2026-06-17 19:14:11,390 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=LQP03HQ4N7H02D: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=LQP03HQ4N7H02D
+2026-06-17 19:27:11,324 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item11956910
+2026-06-17 19:27:12,434 [INFO] partkeeper.parser: URL parsed: mpn=LQP03TG2N2B02D category=Inductors, Coils and Chokes manufacturer= search=False tech_pairs=False
+2026-06-17 19:27:22,805 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=LQP03TG2N2B02D
+2026-06-17 19:27:23,830 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=LQP03TG2N2B02D: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=LQP03TG2N2B02D
+2026-06-17 19:35:29,271 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item17512130
+2026-06-17 19:35:30,252 [INFO] partkeeper.parser: URL parsed: mpn=7-495-649-84-45 category=Capacitors manufacturer= search=False tech_pairs=False
+2026-06-17 19:36:05,370 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=LQW15DN100M00D
+2026-06-17 19:36:06,140 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=LQW15DN100M00D: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=LQW15DN100M00D
+2026-06-17 19:36:38,255 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item605825
+2026-06-17 19:36:39,262 [INFO] partkeeper.parser: URL parsed: mpn=GRM21B5C1H223JA01L-0805-0 category=Capacitors manufacturer=Murata search=False tech_pairs=False
+2026-06-17 19:36:46,276 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=GRM21B5C1H223JA01L-0805-0
+2026-06-17 19:36:47,086 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=GRM21B5C1H223JA01L-0805-0: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=GRM21B5C1H223JA01L-0805-0
+2026-06-18 14:27:16,770 [INFO] partkeeper.bom: Analyzing BOM: C:\Users\d.ryzhov\Desktop\PE1.1.2_BOM.xlsx
+2026-06-18 14:27:22,411 [INFO] partkeeper.bom: BOM analyzed: rows=94 grouped=65 warnings=1
+2026-06-18 15:06:04,202 [INFO] __main__: Application closing
+2026-06-18 15:36:40,844 [INFO] partkeeper.logging_config: Logging enabled: C:\Users\d.ryzhov\Documents\Partkeeper_DB\logs\partkeeper.log max_bytes=1000000 backup_count=5
+2026-06-18 15:36:41,813 [INFO] partkeeper.app: PartKeeper window initialized
+2026-06-18 15:38:32,629 [INFO] partkeeper.app: Application closing
+2026-06-18 15:38:46,545 [INFO] partkeeper.logging_config: Logging enabled: C:\Users\d.ryzhov\Documents\Partkeeper_DB\logs\partkeeper.log max_bytes=1000000 backup_count=5
+2026-06-18 15:38:46,962 [INFO] partkeeper.app: PartKeeper window initialized
+2026-06-18 15:52:22,417 [INFO] partkeeper.logging_config: Logging enabled: C:\Users\d.ryzhov\Documents\PartKeeper_DB\logs\partkeeper.log max_bytes=1000000 backup_count=5
+2026-06-18 15:52:22,961 [INFO] __main__: PartKeeper window initialized
+2026-06-18 15:53:04,098 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item29112176
+2026-06-18 15:53:05,383 [INFO] partkeeper.parser: URL parsed: mpn=7-495-649-84-45 category=Integrated Circuits - Logic manufacturer= search=False tech_pairs=False
+2026-06-18 15:54:11,148 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item29112176
+2026-06-18 15:54:12,238 [INFO] partkeeper.parser: URL parsed: mpn=7-495-649-84-45 category=Integrated Circuits - Logic manufacturer= search=False tech_pairs=False
+2026-06-18 15:54:23,833 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=7-495-649-84-45
+2026-06-18 15:54:24,480 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=7-495-649-84-45: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=7-495-649-84-45
+2026-06-18 15:55:09,722 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=TMUX7212RUMR
+2026-06-18 15:55:10,690 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=TMUX7212RUMR: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=TMUX7212RUMR
+2026-06-18 15:57:44,493 [INFO] partkeeper.undo: Redo: Изменение категорий
+2026-06-18 15:57:44,524 [INFO] partkeeper.db: Database snapshot restored: components=456 lots=492
+2026-06-18 16:50:57,042 [INFO] partkeeper.db: Component card updated: id=471 mpn=TMUX7212RUMR
+2026-06-18 16:50:57,072 [INFO] partkeeper.undo: Redo: Автосохранение карточки
+2026-06-18 16:50:57,127 [INFO] partkeeper.db: Database snapshot restored: components=457 lots=493
+2026-06-18 17:24:22,795 [INFO] __main__: Application closing
+2026-06-18 17:24:30,353 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item701011
+2026-06-18 17:24:31,555 [INFO] partkeeper.parser: URL parsed: mpn=MC00625W040214M70 category=Capacitors manufacturer=Viking search=False tech_pairs=False
+2026-06-18 17:24:32,432 [INFO] __main__: Application closing
+2026-06-18 17:24:38,946 [INFO] __main__: Application closing
+2026-06-18 17:25:03,952 [INFO] partkeeper.app: Application closing
+2026-06-18 17:27:05,754 [INFO] partkeeper.logging_config: Logging enabled: C:\Users\d.ryzhov\Documents\PartKeeper_DB\logs\partkeeper.log max_bytes=1000000 backup_count=5
+2026-06-18 17:27:07,058 [INFO] __main__: PartKeeper window initialized
+2026-06-18 17:28:13,746 [WARNING] partkeeper.db: Duplicate MPN cards merged: keeper=205 sources=['471'] mpn=TMUX7212RUM
+2026-06-18 17:29:29,712 [WARNING] partkeeper.db: Duplicate MPN cards merged: keeper=469 sources=['25'] mpn=TPS563240DDC
+2026-06-18 17:29:52,770 [INFO] partkeeper.undo: Redo: Объединение дублей MPN
+2026-06-18 17:29:52,848 [INFO] partkeeper.db: Database snapshot restored: components=455 lots=493
+2026-06-18 17:30:26,667 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=TMUX7212RUM
+2026-06-18 17:30:27,601 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=TMUX7212RUM: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=TMUX7212RUM
+2026-06-18 17:30:57,708 [INFO] partkeeper.undo: Redo: Исправление MPN
+2026-06-18 17:30:57,766 [INFO] partkeeper.db: Database snapshot restored: components=455 lots=493
+2026-06-18 17:31:05,274 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=TMUX7212RUMR
+2026-06-18 17:31:06,109 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=TMUX7212RUMR: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=TMUX7212RUMR
+2026-06-18 17:31:16,702 [INFO] partkeeper.undo: Undo: Исправление MPN
+2026-06-18 17:31:16,753 [INFO] partkeeper.db: Database snapshot restored: components=455 lots=493
+2026-06-18 17:31:28,798 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=TMUX7212RUM
+2026-06-18 17:31:29,764 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=TMUX7212RUM: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=TMUX7212RUM
+2026-06-18 17:31:38,192 [INFO] partkeeper.undo: Redo: Исправление MPN
+2026-06-18 17:31:38,246 [INFO] partkeeper.db: Database snapshot restored: components=455 lots=493
+2026-06-18 17:31:53,750 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=TMUX7212RUMR
+2026-06-18 17:31:54,518 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=TMUX7212RUMR: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=TMUX7212RUMR
+2026-06-18 17:32:59,627 [INFO] partkeeper.db: Component card updated: id=205 mpn=TMUX7212RUMR
+2026-06-18 17:32:59,647 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-18 17:32:59,698 [INFO] partkeeper.db: Database snapshot restored: components=455 lots=493
+2026-06-18 17:35:04,274 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item5732960
+2026-06-18 17:35:05,328 [INFO] partkeeper.parser: URL parsed: mpn=7M-16.000MEEQ-T category=Crystals and Oscillators manufacturer=TXC search=False tech_pairs=False
+2026-06-18 17:35:14,543 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=7M-16.000MEEQ-T
+2026-06-18 17:35:15,264 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=7M-16.000MEEQ-T: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=7M-16.000MEEQ-T
+2026-06-18 17:43:30,646 [INFO] partkeeper.db: Lot inserted: id=501 component_id=88 quantity=302
+2026-06-18 17:45:46,861 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item30855590
+2026-06-18 17:45:48,047 [INFO] partkeeper.parser: URL parsed: mpn=7-495-649-84-45 category=Capacitors manufacturer= search=False tech_pairs=False
+2026-06-18 17:45:52,807 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item30855590
+2026-06-18 17:45:54,510 [INFO] partkeeper.parser: URL parsed: mpn=7-495-649-84-45 category=Capacitors manufacturer= search=False tech_pairs=False
+2026-06-18 17:45:54,678 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item30855590
+2026-06-18 17:45:55,712 [INFO] partkeeper.parser: URL parsed: mpn=7-495-649-84-45 category=Capacitors manufacturer= search=False tech_pairs=False
+2026-06-18 17:46:37,084 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=H12VND3BA
+2026-06-18 17:46:38,058 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=H12VND3BA: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=H12VND3BA
+2026-06-18 18:17:29,805 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item29580053
+2026-06-18 18:17:31,034 [INFO] partkeeper.parser: URL parsed: mpn=X161032768KGD2SI category=Crystals and Oscillators manufacturer= search=False tech_pairs=False
+2026-06-18 18:17:40,406 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=X161032768KGD2SI
+2026-06-18 18:17:41,059 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=X161032768KGD2SI: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=X161032768KGD2SI
+2026-06-18 18:30:27,079 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item677385
+2026-06-18 18:30:28,007 [INFO] partkeeper.parser: URL parsed: mpn=SMTCAP/C-6.3-220.0-M-0R015 category=Capacitors manufacturer= search=False tech_pairs=False
+2026-06-18 18:30:37,527 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=SMTCAP/C-6.3-220.0-M-0R015
+2026-06-18 18:30:38,145 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=SMTCAP/C-6.3-220.0-M-0R015: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=SMTCAP/C-6.3-220.0-M-0R015
+2026-06-18 18:31:10,250 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=T520C227M006ATE015
+2026-06-18 18:31:10,865 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=T520C227M006ATE015: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=T520C227M006ATE015
+2026-06-18 18:33:10,055 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item26250741
+2026-06-18 18:33:11,240 [INFO] partkeeper.parser: URL parsed: mpn=MAX40203ANS+T category=Integrated Circuits manufacturer=Analog Devices search=False tech_pairs=False
+2026-06-18 18:33:18,944 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=MAX40203ANS+T
+2026-06-18 18:33:19,608 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=MAX40203ANS+T: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=MAX40203ANS+T
+2026-06-18 18:34:40,194 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item20950844
+2026-06-18 18:34:42,079 [INFO] partkeeper.parser: URL parsed: mpn=MAX40203AUK+T category=Integrated Circuits manufacturer=Analog Devices search=False tech_pairs=False
+2026-06-18 18:34:47,879 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=MAX40203AUK+T
+2026-06-18 18:34:48,610 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=MAX40203AUK+T: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=MAX40203AUK+T
+2026-06-18 18:36:37,588 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item13272780
+2026-06-18 18:36:38,764 [INFO] partkeeper.parser: URL parsed: mpn=MAXIMUM category=Integrated Circuits manufacturer=Analog Devices search=False tech_pairs=False
+2026-06-18 18:37:06,826 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=CSD17382F4
+2026-06-18 18:37:07,554 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=CSD17382F4: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=CSD17382F4
+2026-06-18 18:40:22,280 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item1325848
+2026-06-18 18:40:23,526 [INFO] partkeeper.parser: URL parsed: mpn=MAXIMUM category=Integrated Circuits manufacturer=Analog Devices search=False tech_pairs=False
+2026-06-18 18:40:42,177 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=BZT52C2V0S
+2026-06-18 18:40:42,885 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=BZT52C2V0S: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=BZT52C2V0S
+2026-06-18 18:41:00,547 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=BZT52C2V0S-7-F
+2026-06-18 18:41:01,254 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=BZT52C2V0S-7-F: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=BZT52C2V0S-7-F
+2026-06-18 18:44:50,282 [WARNING] partkeeper.component_search: Component lookup provider failed: Mouser API mpn=RE0201BRE07150RL: HTTP 403: <HTML><HEAD>
+<TITLE>Access Denied</TITLE>
+</HEAD><BODY>
+<H1>Access Denied</H1>
+ 
+You don't have permission to access "http&#58;&#47;&#47;api&#46;mouser&#46;com&#47;api&#47;v1&#47;search&#47;partnumber&#63;" on this server.<P>
+Reference&#32;
+2026-06-18 18:44:50,283 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=RE0201BRE07150RL
+2026-06-18 18:44:50,619 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=RE0201BRE07150RL: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=RE0201BRE07150RL
+2026-06-18 18:45:05,878 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=RE0201BRE07150RL
+2026-06-18 18:45:06,613 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=RE0201BRE07150RL: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=RE0201BRE07150RL
+2026-06-18 18:45:36,068 [INFO] partkeeper.db: Component card updated: id=108 mpn=RE0201BRE07150RL
+2026-06-18 18:45:36,077 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-18 18:45:36,098 [INFO] partkeeper.db: Database snapshot restored: components=461 lots=500
+2026-06-18 18:46:03,486 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item29638824
+2026-06-18 18:46:04,999 [INFO] partkeeper.parser: URL parsed: mpn=SJK-7U-32.000-10-10-40-C-10 category=Crystals and Oscillators manufacturer= search=False tech_pairs=False
+2026-06-18 18:46:13,373 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=SJK-7U-32.000-10-10-40-C-10
+2026-06-18 18:46:14,377 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=SJK-7U-32.000-10-10-40-C-10: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=SJK-7U-32.000-10-10-40-C-10
+2026-06-18 18:48:11,539 [INFO] partkeeper.undo: Undo: Сохранение изменений карточки
+2026-06-18 18:48:11,574 [INFO] partkeeper.db: Database snapshot restored: components=461 lots=500
+2026-06-18 18:50:34,208 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=RE0201BRE07150RL
+2026-06-18 18:50:35,008 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=RE0201BRE07150RL: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=RE0201BRE07150RL
+2026-06-18 18:50:46,970 [INFO] partkeeper.db: Component card updated: id=108 mpn=RE0201BRE07150RL
+2026-06-18 18:50:46,990 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-18 18:50:47,032 [INFO] partkeeper.db: Database snapshot restored: components=462 lots=501
+2026-06-18 18:51:52,630 [INFO] partkeeper.db: Component card updated: id=108 mpn=RE0201BRE07150RL
+2026-06-18 18:51:52,645 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-18 18:51:52,678 [INFO] partkeeper.db: Database snapshot restored: components=462 lots=501
+2026-06-18 18:52:16,622 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=ECS-327-9-34QCS-TR
+2026-06-18 18:52:17,267 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=ECS-327-9-34QCS-TR: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=ECS-327-9-34QCS-TR
+2026-06-18 18:52:25,627 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=MLZ2012N6R8LT000
+2026-06-18 18:52:26,549 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=MLZ2012N6R8LT000: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=MLZ2012N6R8LT000
+2026-06-18 18:52:40,830 [INFO] partkeeper.db: Component card updated: id=99 mpn=MLZ2012N6R8LT000
+2026-06-18 18:52:40,851 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-18 18:52:40,880 [INFO] partkeeper.db: Database snapshot restored: components=462 lots=501
+2026-06-18 18:53:02,300 [INFO] partkeeper.db: Component card updated: id=99 mpn=MLZ2012N6R8LT000
+2026-06-18 18:53:02,320 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-18 18:53:02,355 [INFO] partkeeper.db: Database snapshot restored: components=462 lots=501
+2026-06-18 18:53:30,301 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=DSHP08TSGER
+2026-06-18 18:53:31,089 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=DSHP08TSGER: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=DSHP08TSGER
+2026-06-18 18:53:41,752 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=GSC8530YA-16R2700
+2026-06-18 18:53:42,427 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=GSC8530YA-16R2700: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=GSC8530YA-16R2700
+2026-06-18 18:53:53,023 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=ECS-327-9-34QCS-TR
+2026-06-18 18:53:53,629 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=ECS-327-9-34QCS-TR: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=ECS-327-9-34QCS-TR
+2026-06-18 18:54:05,382 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=2PH2-08-UA
+2026-06-18 18:54:06,174 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=2PH2-08-UA: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=2PH2-08-UA
+2026-06-18 18:54:21,876 [INFO] partkeeper.db: Component card updated: id=80 mpn=2PH2-08-UA
+2026-06-18 18:54:21,889 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-18 18:54:21,922 [INFO] partkeeper.db: Database snapshot restored: components=462 lots=501
+2026-06-18 18:54:33,301 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=PTS5265M15SMTR2LFS
+2026-06-18 18:54:34,030 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=PTS5265M15SMTR2LFS: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=PTS5265M15SMTR2LFS
+2026-06-18 18:54:45,326 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=B0505MT-1WR4
+2026-06-18 18:54:46,196 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=B0505MT-1WR4: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=B0505MT-1WR4
+2026-06-18 18:55:12,752 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item9654033
+2026-06-18 18:55:13,595 [INFO] partkeeper.parser: URL parsed: mpn=LQM2HPN4R7MG0L category=Inductors, Coils and Chokes manufacturer=Bourns search=False tech_pairs=False
+2026-06-18 18:55:19,200 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=LQM2HPN4R7MG0L
+2026-06-18 18:55:19,880 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=LQM2HPN4R7MG0L: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=LQM2HPN4R7MG0L
+2026-06-18 18:56:17,513 [INFO] partkeeper.db: Lot inserted: id=509 component_id=135 quantity=50
+2026-06-19 11:46:49,428 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item9866147
+2026-06-19 11:46:50,644 [INFO] partkeeper.parser: URL parsed: mpn=DRV2605 category=Integrated Circuits - Drivers manufacturer=Texas Instruments search=False tech_pairs=False
+2026-06-19 11:46:57,804 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=DRV2605
+2026-06-19 11:46:58,696 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=DRV2605: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=DRV2605
+2026-06-19 11:48:18,382 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item30710084
+2026-06-19 11:48:19,580 [INFO] partkeeper.parser: URL parsed: mpn=MPM4730GPQ-0000-Z category=Integrated Circuits - PMIC manufacturer= search=False tech_pairs=False
+2026-06-19 11:48:27,121 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=MPM4730GPQ-0000-Z
+2026-06-19 11:48:27,982 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=MPM4730GPQ-0000-Z: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=MPM4730GPQ-0000-Z
+2026-06-19 11:52:21,998 [INFO] partkeeper.db: Lot inserted: id=511 component_id=212 quantity=5
+2026-06-19 11:53:26,772 [INFO] partkeeper.db: Lot inserted: id=512 component_id=478 quantity=10
+2026-06-19 11:58:47,645 [INFO] partkeeper.db: Lot deleted: id=510 component_id=478 quantity=4
+2026-06-19 11:58:48,722 [INFO] partkeeper.undo: Redo: Изменение мест хранения
+2026-06-19 11:58:48,761 [INFO] partkeeper.db: Database snapshot restored: components=463 lots=504
+2026-06-19 12:10:27,859 [INFO] __main__: Application closing
+2026-06-19 12:19:46,094 [INFO] partkeeper.logging_config: Logging enabled: C:\Users\d.ryzhov\Documents\PartKeeper_DB\logs\partkeeper.log max_bytes=1000000 backup_count=5
+2026-06-19 12:19:46,605 [INFO] __main__: PartKeeper window initialized
+2026-06-19 12:20:13,405 [INFO] __main__: Application closing
+2026-06-19 12:23:27,726 [INFO] partkeeper.logging_config: Logging enabled: C:\Users\d.ryzhov\Documents\PartKeeper_DB\logs\partkeeper.log max_bytes=1000000 backup_count=5
+2026-06-19 12:23:28,268 [INFO] __main__: PartKeeper window initialized
+2026-06-19 12:32:37,211 [INFO] __main__: Application closing
+2026-06-19 12:34:41,167 [INFO] partkeeper.logging_config: Logging enabled: C:\Users\d.ryzhov\Documents\PartKeeper_DB\logs\partkeeper.log max_bytes=1000000 backup_count=5
+2026-06-19 12:34:41,817 [INFO] __main__: PartKeeper window initialized
+2026-06-19 12:35:28,021 [INFO] __main__: Application closing
+2026-06-19 13:24:56,866 [INFO] partkeeper.logging_config: Logging enabled: C:\Users\d.ryzhov\Documents\PartKeeper_DB\logs\partkeeper.log max_bytes=1000000 backup_count=5
+2026-06-19 13:24:57,471 [INFO] __main__: PartKeeper window initialized
+2026-06-19 13:25:07,916 [INFO] __main__: Application closing
+2026-06-19 13:44:44,149 [INFO] partkeeper.logging_config: Logging enabled: C:\Users\d.ryzhov\Documents\PartKeeper_DB\logs\partkeeper.log max_bytes=1000000 backup_count=5
+2026-06-19 13:44:45,409 [INFO] __main__: PartKeeper window initialized
+2026-06-19 14:40:00,492 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=OPA2391YBJR
+2026-06-19 14:40:00,959 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=OPA2391YBJR: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=OPA2391YBJR
+2026-06-19 14:40:31,019 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=BZT52CZV05-7-F
+2026-06-19 14:40:31,313 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=BZT52CZV05-7-F: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=BZT52CZV05-7-F
+2026-06-19 14:40:45,446 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=OVSRRGBCC3TM
+2026-06-19 14:40:45,581 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=OVSRRGBCC3TM: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=OVSRRGBCC3TM
+2026-06-19 14:41:43,966 [INFO] partkeeper.db: Component card updated: id=121 mpn=OVSRRGBCC3TM
+2026-06-19 14:41:43,981 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-19 14:41:44,020 [INFO] partkeeper.db: Database snapshot restored: components=463 lots=504
+2026-06-19 14:41:56,451 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=TS4148RCG
+2026-06-19 14:41:56,847 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=TS4148RCG: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=TS4148RCG
+2026-06-19 14:43:42,231 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=TS4148RCG
+2026-06-19 14:43:42,609 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=TS4148RCG: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=TS4148RCG
+2026-06-19 14:43:58,105 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=TS4148RCG
+2026-06-19 14:43:58,248 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=TS4148RCG: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=TS4148RCG
+2026-06-19 14:44:26,321 [INFO] partkeeper.db: Component card updated: id=125 mpn=TS4148RCG
+2026-06-19 14:44:26,333 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-19 14:44:26,367 [INFO] partkeeper.db: Database snapshot restored: components=463 lots=504
+2026-06-19 14:44:42,455 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=B0505MT-1WR4
+2026-06-19 14:44:42,586 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=B0505MT-1WR4: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=B0505MT-1WR4
+2026-06-19 14:45:00,596 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=PUSB3AB6Z
+2026-06-19 14:45:00,945 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=PUSB3AB6Z: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=PUSB3AB6Z
+2026-06-19 14:45:14,995 [INFO] partkeeper.db: Component card updated: id=122 mpn=PUSB3AB6Z
+2026-06-19 14:45:15,007 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-19 14:45:15,041 [INFO] partkeeper.db: Database snapshot restored: components=463 lots=504
+2026-06-19 14:45:33,772 [INFO] partkeeper.db: Component card updated: id=122 mpn=PUSB3AB6Z
+2026-06-19 14:45:33,784 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-19 14:45:33,811 [INFO] partkeeper.db: Database snapshot restored: components=463 lots=504
+2026-06-19 14:52:39,849 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item20950844
+2026-06-19 14:52:41,422 [INFO] partkeeper.parser: URL parsed: mpn=MAX40203AUK+T category=Integrated Circuits manufacturer=Analog Devices search=False tech_pairs=False
+2026-06-19 14:52:51,901 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=MAX40203AUK+T
+2026-06-19 14:52:52,049 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=MAX40203AUK+T: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=MAX40203AUK+T
+2026-06-19 14:53:54,635 [INFO] partkeeper.db: Lot inserted: id=513 component_id=474 quantity=10
+2026-06-19 15:03:05,648 [INFO] partkeeper.db: Lot withdrawal: lot_id=51 component_id=47 old=10 new=7 qty=3 by=d.ryzhov purpose=боликам на сборку PE.1.1.2
+2026-06-19 15:03:10,234 [INFO] partkeeper.undo: Redo: Изменение мест хранения
+2026-06-19 15:03:10,289 [INFO] partkeeper.db: Database snapshot restored: components=463 lots=505
+2026-06-19 15:03:50,871 [INFO] partkeeper.undo: Redo: Изменение мест хранения
+2026-06-19 15:03:50,910 [INFO] partkeeper.db: Database snapshot restored: components=463 lots=505
+2026-06-19 15:05:13,650 [INFO] partkeeper.bom: Analyzing BOM: C:\Users\d.ryzhov\Downloads\Telegram Desktop\PE2A_v2_BOM.xlsx
+2026-06-19 15:05:20,746 [INFO] partkeeper.bom: BOM analyzed: rows=98 grouped=98 warnings=0
+2026-06-19 17:38:11,020 [INFO] __main__: Application closing
+2026-06-19 18:14:09,245 [INFO] partkeeper.logging_config: Logging enabled: C:\Users\d.ryzhov\Documents\PartKeeper_DB\logs\partkeeper.log max_bytes=1000000 backup_count=5
+2026-06-19 18:14:10,499 [INFO] __main__: PartKeeper window initialized
+2026-06-19 18:15:33,338 [INFO] partkeeper.bom: Analyzing BOM: C:\Users\d.ryzhov\Downloads\Telegram Desktop\PE2A_v2_BOM.xlsx
+2026-06-19 18:15:41,282 [INFO] partkeeper.bom: BOM analyzed: rows=98 grouped=98 warnings=3
+2026-06-19 18:18:58,250 [WARNING] partkeeper.component_search: Component lookup provider failed: Mouser API mpn=67997-106HLF: HTTP 403: <HTML><HEAD>
+<TITLE>Access Denied</TITLE>
+</HEAD><BODY>
+<H1>Access Denied</H1>
+ 
+You don't have permission to access "http&#58;&#47;&#47;api&#46;mouser&#46;com&#47;api&#47;v1&#47;search&#47;partnumber&#63;" on this server.<P>
+Reference&#32;
+2026-06-19 18:18:58,252 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=67997-106HLF
+2026-06-19 18:18:58,464 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=67997-106HLF: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=67997-106HLF
+2026-06-19 18:19:14,898 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=67997-106HLF
+2026-06-19 18:19:15,192 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=67997-106HLF: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=67997-106HLF
+2026-06-19 18:19:32,957 [INFO] partkeeper.db: Component card updated: id=83 mpn=67997-106HLF
+2026-06-19 18:19:32,970 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-19 18:19:33,000 [INFO] partkeeper.db: Database snapshot restored: components=463 lots=505
+2026-06-19 18:19:52,783 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=B0505MT-1WR4
+2026-06-19 18:19:52,927 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=B0505MT-1WR4: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=B0505MT-1WR4
+2026-06-19 18:26:14,779 [WARNING] partkeeper.db: Component deleted: id=279
+2026-06-19 18:26:14,786 [INFO] partkeeper.undo: Redo: Удаление компонента
+2026-06-19 18:26:14,821 [INFO] partkeeper.db: Database snapshot restored: components=462 lots=501
+2026-06-19 18:27:48,118 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=BNO085
+2026-06-19 18:27:48,498 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=BNO085: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=BNO085
+2026-06-19 18:28:37,643 [INFO] partkeeper.db: Component card updated: id=129 mpn=BNO085
+2026-06-19 18:28:37,660 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-19 18:28:37,702 [INFO] partkeeper.db: Database snapshot restored: components=462 lots=501
+2026-06-19 18:29:05,554 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=7M-16.000MEEQ-T
+2026-06-19 18:29:05,888 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=7M-16.000MEEQ-T: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=7M-16.000MEEQ-T
+2026-06-19 18:29:45,270 [INFO] partkeeper.db: Component card updated: id=88 mpn=7M-16.000MEEQ-T
+2026-06-19 18:29:45,281 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-19 18:29:45,314 [INFO] partkeeper.db: Database snapshot restored: components=462 lots=501
+2026-06-19 18:30:24,052 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=RB530SM-30T2R
+2026-06-19 18:30:24,392 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=RB530SM-30T2R: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=RB530SM-30T2R
+2026-06-19 18:31:08,247 [INFO] partkeeper.db: Component card updated: id=124 mpn=RB530SM-30T2R
+2026-06-19 18:31:08,264 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-19 18:31:08,308 [INFO] partkeeper.db: Database snapshot restored: components=462 lots=501
+2026-06-19 18:34:09,859 [INFO] partkeeper.undo: Redo: Исправление MPN
+2026-06-19 18:34:09,901 [INFO] partkeeper.db: Database snapshot restored: components=462 lots=501
+2026-06-19 18:34:22,641 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=GRM033R6YA104KE14J
+2026-06-19 18:34:22,889 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=GRM033R6YA104KE14J: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=GRM033R6YA104KE14J
+2026-06-19 18:34:40,899 [INFO] partkeeper.db: Component card updated: id=59 mpn=GRM033R6YA104KE14J
+2026-06-19 18:34:40,911 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-19 18:34:40,943 [INFO] partkeeper.db: Database snapshot restored: components=462 lots=501
+2026-06-19 18:35:54,589 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=RB168VYM-30FHTR
+2026-06-19 18:35:54,958 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=RB168VYM-30FHTR: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=RB168VYM-30FHTR
+2026-06-19 18:36:27,613 [INFO] partkeeper.db: Component card updated: id=123 mpn=RB168VYM-30FHTR
+2026-06-19 18:36:27,638 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-19 18:36:27,691 [INFO] partkeeper.db: Database snapshot restored: components=462 lots=501
+2026-06-19 18:36:55,492 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=2541FV-5P
+2026-06-19 18:36:55,879 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=2541FV-5P: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=2541FV-5P
+2026-06-19 18:37:11,978 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=467651301
+2026-06-19 18:37:12,115 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=467651301: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=467651301
+2026-06-19 18:37:34,332 [INFO] partkeeper.db: Component card updated: id=81 mpn=467651301
+2026-06-19 18:37:34,375 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-19 18:37:34,407 [INFO] partkeeper.db: Database snapshot restored: components=462 lots=501
+2026-06-19 18:38:10,107 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=TL3305AF260QG
+2026-06-19 18:38:10,510 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=TL3305AF260QG: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=TL3305AF260QG
+2026-06-19 18:38:39,256 [INFO] partkeeper.db: Component card updated: id=105 mpn=TL3305AF260QG
+2026-06-19 18:38:39,270 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-19 18:38:39,301 [INFO] partkeeper.db: Database snapshot restored: components=462 lots=501
+2026-06-19 18:38:56,144 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=E104-BT5032A
+2026-06-19 18:38:56,263 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=E104-BT5032A: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=E104-BT5032A
+2026-06-19 18:39:26,199 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=67996-102HLF
+2026-06-19 18:39:26,556 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=67996-102HLF: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=67996-102HLF
+2026-06-19 18:39:35,311 [INFO] partkeeper.db: Component card updated: id=82 mpn=67996-102HLF
+2026-06-19 18:39:35,324 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-19 18:39:35,355 [INFO] partkeeper.db: Database snapshot restored: components=462 lots=501
+2026-06-19 18:40:25,216 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=ECS-327-9-34QCS-TR
+2026-06-19 18:40:25,355 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=ECS-327-9-34QCS-TR: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=ECS-327-9-34QCS-TR
+2026-06-19 18:40:35,342 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=7M-13.560MEEQ-T
+2026-06-19 18:40:35,705 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=7M-13.560MEEQ-T: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=7M-13.560MEEQ-T
+2026-06-19 18:41:06,898 [INFO] partkeeper.db: Component card updated: id=87 mpn=7M-13.560MEEQ-T
+2026-06-19 18:41:06,910 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-19 18:41:06,942 [INFO] partkeeper.db: Database snapshot restored: components=462 lots=501
+2026-06-19 18:43:05,702 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item9362238
+2026-06-19 18:43:06,486 [INFO] partkeeper.parser: URL parsed: mpn=TPS61256YFFR category=Integrated Circuits - PMIC manufacturer=Texas Instruments search=False tech_pairs=False
+2026-06-19 18:43:15,401 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=TPS61256YFFR
+2026-06-19 18:43:15,543 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=TPS61256YFFR: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=TPS61256YFFR
+2026-06-19 18:51:37,665 [INFO] partkeeper.db: Zero lot replaced: id=433 component_id=416 quantity=21
+2026-06-19 18:55:14,730 [WARNING] partkeeper.db: Duplicate MPN cards merged: keeper=465 sources=['338'] mpn=GRM188R61E106MA73D
+2026-06-19 18:56:12,506 [INFO] partkeeper.undo: Redo: Объединение дублей MPN
+2026-06-19 18:56:12,542 [INFO] partkeeper.db: Database snapshot restored: components=461 lots=501
+2026-06-19 18:56:56,890 [INFO] partkeeper.undo: Redo: Исправление MPN
+2026-06-19 18:56:56,923 [INFO] partkeeper.db: Database snapshot restored: components=461 lots=501
+2026-06-19 18:57:21,566 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=MAX4020AUK+
+2026-06-19 18:57:21,841 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=MAX4020AUK+: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=MAX4020AUK+
+2026-06-19 18:57:31,445 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=MAX40203AUK+
+2026-06-19 18:57:31,574 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=MAX40203AUK+: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=MAX40203AUK+
+2026-06-19 19:01:53,874 [WARNING] partkeeper.db: Component deleted: id=140
+2026-06-19 19:01:53,882 [INFO] partkeeper.undo: Redo: Удаление компонента
+2026-06-19 19:01:53,919 [INFO] partkeeper.db: Database snapshot restored: components=460 lots=500
+2026-06-19 19:02:01,634 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=MAX40203AUK+
+2026-06-19 19:02:01,989 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=MAX40203AUK+: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=MAX40203AUK+
+2026-06-19 19:02:16,438 [INFO] partkeeper.db: Component card updated: id=474 mpn=MAX40203AUK+
+2026-06-19 19:02:16,450 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-19 19:02:16,480 [INFO] partkeeper.db: Database snapshot restored: components=460 lots=500
+2026-06-19 19:03:21,521 [INFO] partkeeper.db: Lot inserted: id=514 component_id=210 quantity=19
+2026-06-19 19:03:48,994 [INFO] partkeeper.undo: Redo: Исправление MPN
+2026-06-19 19:03:49,049 [INFO] partkeeper.db: Database snapshot restored: components=460 lots=501
+2026-06-19 19:03:57,866 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=MAX40203ANS+
+2026-06-19 19:03:58,285 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=MAX40203ANS+: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=MAX40203ANS+
+2026-06-19 19:06:20,449 [INFO] partkeeper.db: Component card updated: id=210 mpn=MAX40203ANS+
+2026-06-19 19:06:20,463 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-19 19:06:20,498 [INFO] partkeeper.db: Database snapshot restored: components=460 lots=501
+2026-06-19 19:06:35,260 [INFO] partkeeper.db: Component card updated: id=210 mpn=MAX40203ANS+
+2026-06-19 19:06:35,272 [INFO] partkeeper.undo: Redo: Сохранение изменений карточки
+2026-06-19 19:06:35,302 [INFO] partkeeper.db: Database snapshot restored: components=460 lots=501
+2026-06-19 19:43:55,803 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item29769436
+2026-06-19 19:43:58,270 [INFO] partkeeper.parser: URL parsed: mpn=IRLML6402TRPBF category=Semiconductors - Transistors manufacturer= search=False tech_pairs=False
+2026-06-19 19:44:11,011 [WARNING] partkeeper.component_search: Component lookup provider failed: Mouser API mpn=IRLML6402TRPBF: HTTP 403: <HTML><HEAD>
+<TITLE>Access Denied</TITLE>
+</HEAD><BODY>
+<H1>Access Denied</H1>
+ 
+You don't have permission to access "http&#58;&#47;&#47;api&#46;mouser&#46;com&#47;api&#47;v1&#47;search&#47;partnumber&#63;" on this server.<P>
+Reference&#32;
+2026-06-19 19:44:11,012 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=IRLML6402TRPBF
+2026-06-19 19:44:11,153 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=IRLML6402TRPBF: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=IRLML6402TRPBF
+2026-06-19 19:44:29,543 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=IRLML6402TRPBF
+2026-06-19 19:44:29,816 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=IRLML6402TRPBF: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=IRLML6402TRPBF
+2026-06-19 19:45:46,253 [INFO] partkeeper.db: Lot inserted: id=516 component_id=479 quantity=50
+2026-06-19 19:45:59,842 [INFO] __main__: Application closing
+2026-06-22 10:19:37,282 [INFO] partkeeper.logging_config: Logging enabled: C:\Users\d.ryzhov\Documents\Partkeeper_DB\logs\partkeeper.log max_bytes=1000000 backup_count=5
+2026-06-22 10:19:37,736 [INFO] __main__: PartKeeper window initialized
+2026-06-22 10:34:45,407 [INFO] __main__: Application closing
+2026-06-22 10:34:52,954 [INFO] partkeeper.logging_config: Logging enabled: C:\Users\d.ryzhov\Documents\Partkeeper_DB\logs\partkeeper.log max_bytes=1000000 backup_count=5
+2026-06-22 10:34:53,386 [INFO] __main__: PartKeeper window initialized
+2026-06-22 10:37:53,872 [INFO] partkeeper.bom: Analyzing BOM: C:\Users\d.ryzhov\Downloads\PE1.1.1.xlsx board_count=1
+2026-06-22 10:37:59,721 [INFO] partkeeper.bom: BOM analyzed: rows=87 grouped=66 warnings=23 board_count=1
+2026-06-22 10:47:06,833 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item8482384
+2026-06-22 10:47:10,703 [INFO] partkeeper.parser: URL parsed: mpn=C0603C479C3GACAUTO category=Capacitors manufacturer= search=False tech_pairs=False
+2026-06-22 10:47:19,236 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=C0603C479C3GACAUTO
+2026-06-22 10:47:19,948 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=C0603C479C3GACAUTO: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=C0603C479C3GACAUTO
+2026-06-22 10:48:51,550 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=CC0603CPNPO9BN4R7
+2026-06-22 10:48:52,591 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=CC0603CPNPO9BN4R7: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=CC0603CPNPO9BN4R7
+2026-06-22 10:50:33,909 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/price/item13898220
+2026-06-22 10:50:38,370 [INFO] partkeeper.parser: URL parsed: mpn=MAXIMUM category=Integrated Circuits manufacturer=Analog Devices search=False tech_pairs=False
+2026-06-22 10:51:59,848 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=STPS1L40ZF
+2026-06-22 10:52:00,914 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=STPS1L40ZF: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=STPS1L40ZF
+2026-06-22 10:54:24,115 [INFO] partkeeper.parser: Parsing supplier URL: https://www.elitan.ru/search/?q=3VM11201-D740-7H
+2026-06-22 10:54:24,651 [WARNING] partkeeper.component_search: Component lookup provider failed: Элитан mpn=3VM11201-D740-7H: 404 Client Error: Not Found for url: https://www.elitan.ru/search/?q=3VM11201-D740-7H
+2026-06-22 10:56:53,692 [INFO] partkeeper.undo: Redo: Изменение мест хранения
+2026-06-22 10:56:53,722 [INFO] partkeeper.db: Database snapshot restored: components=465 lots=504

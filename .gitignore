@@ -10,4 +10,5 @@
 *.db-journal
 backups/
 logs/
+Partkeeper_DB/
 # Git should store schema.sql, data.sql and db_manifest.json, not the live DB.

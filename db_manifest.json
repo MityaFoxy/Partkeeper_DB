@@ -1,12 +1,12 @@
 {
   "format": "partkeeper-db-dump",
   "schema_version": "23",
-  "exported_at": "2026-06-13T22:12:22",
-  "source_database": "/mnt/data/components_migrated_v23.sqlite3",
-  "components": 407,
-  "lots": 430,
-  "pending_reviews": 1,
-  "revisions": 261,
+  "exported_at": "2026-06-22T16:35:07",
+  "source_database": "C:\\Users\\d.ryzhov\\Documents\\Partkeeper_DB\\components.sqlite3",
+  "components": 465,
+  "lots": 504,
+  "pending_reviews": 2,
+  "revisions": 455,
   "files": [
     "schema.sql",
     "data.sql"

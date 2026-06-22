@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "racks": [
+    {
+      "id": "rack-a",
+      "name": "Кассетница 1",
+      "prefix": "A",
+      "rows": 4,
+      "columns": 4,
+      "disabled_cells": []
+    },
+    {
+      "id": "1457699c4ff546229031ec6c39eaf130",
+      "name": "Стеллаж на складе",
+      "prefix": "BOX",
+      "rows": 5,
+      "columns": 6,
+      "disabled_cells": []
+    }
+  ]
+}
